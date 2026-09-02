@@ -103,7 +103,7 @@ export function AboutUs() {
           {[
             { icon: <Target size={26} />, title: 'Therapist-Centric Approach', desc: 'Every product is designed with therapist input to ensure ease of use and better outcomes.', img: '/about_thumb_device.jpg', color: 'blue' },
             { icon: <Lightbulb size={26} />, title: 'Innovation That Heals', desc: 'We continuously innovate to integrate the latest technology with practical therapy needs.', img: '/about_thumb_electro.jpg', color: 'green' },
-            { icon: <BadgeCheck size={26} />, title: 'Quality You Can Rely On', desc: 'High-grade components, precision engineering and rigorous testing for uncompromised quality.', img: '/about_thumb_device.jpg', color: 'blue' },
+            { icon: <BadgeCheck size={26} />, title: 'Quality You Can Rely On', desc: 'High-grade components, precision engineering and rigorous testing for uncompromised quality.', img: '/slide4_machines.jpg', color: 'blue' },
             { icon: <Headphones size={26} />, title: 'Support That Stays With You', desc: 'From product guidance to after-sales service, our team is always ready to help you.', img: '/about_thumb_support.jpg', color: 'green' },
           ].map(r => (
             <div className="au-s2-row" key={r.title}>
@@ -150,14 +150,10 @@ export function AboutUs() {
       {/* ── SECTION 4: TRUST FOOTER ── */}
       <section className="au-s4">
         <div className="au-s4-img">
-          <img src="/about_building.jpg" alt="Shivshakti HQ" />
-          <div className="au-s4-overlay">SVS &nbsp; SVS</div>
+          <img src="/about_building_new.jpg" alt="Shivshakti HQ" />
+
         </div>
         <div className="au-s4-content">
-          <svg className="au-s4-curve" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path d="M100,0 C-30,20 -30,80 100,100 Z" fill="#0b1f3a" />
-            <path d="M100,0 C-30,20 -30,80 100,100 Z" fill="none" stroke="#208b49" strokeWidth="1" opacity="0.5" />
-          </svg>
           <h2>Your Trust. Our Responsibility.</h2>
           <p>Together, we create a healthier tomorrow.</p>
         </div>

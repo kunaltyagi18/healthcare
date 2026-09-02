@@ -74,41 +74,45 @@ const slides = [
     id: 1,
     image: '/slide1_physio.jpg',
     panelTheme: 'light',
-    panelSolid: '#e4f0fa',
-    panelTransparent: 'rgba(228, 240, 250, 0)',
+    panelSolid: '#f8fafc',
+    panelTransparent: 'rgba(248, 250, 252, 0)',
     accentColor: '#1a5fa8',
-    eyebrow: 'COMPLETE SOLUTIONS FOR',
-    headingLine1: 'IMMERSIVE GAIT &',
-    headingLine2: 'BALANCE',
-    highlight: 'REHABILITATION',
+    headingLine1: 'Advanced Physiotherapy',
+    headingLine2: 'Equipment for',
+    highlight: 'Effective Therapy',
     highlightColor: '#208b49',
-    subheading: 'ADVANCED BIOFEEDBACK & COGNITIVE-PHYSICAL TRAINING',
-    subtext: 'Integrating VR, Robotics, and Real-Time Data.',
-    primaryBtn: { text: 'SHOP NOW', color: '#1a5fa8' },
-    outlineBtn: { text: 'CHAT ON WHATSAPP' },
+    subtext: 'Empowering therapists to deliver better care and faster recovery.',
+    features: [
+      { icon: Activity, label: 'Effective', label2: 'Pain Relief' },
+      { icon: Zap, label: 'Enhances', label2: 'Mobility' },
+      { icon: Target, label: 'Faster', label2: 'Recovery' },
+      { icon: Users, label: 'Trusted by', label2: 'Professionals' },
+    ],
+    primaryBtn: { text: 'EXPLORE PHYSIOTHERAPY RANGE', color: '#0f2a52' },
+    outlineBtn: { text: 'REQUEST A QUOTE' },
   },
   {
     id: 2,
     image: '/slide2_sensory.jpg',
-    panelTheme: 'dark',
-    panelSolid: 'rgba(18, 6, 40, 0.94)',
-    panelTransparent: 'rgba(18, 6, 40, 0)',
-    accentColor: '#a855f7',
+    panelTheme: 'light',
+    panelSolid: 'rgba(244, 240, 248, 0.96)',
+    panelTransparent: 'rgba(244, 240, 248, 0)',
+    accentColor: '#7c3aed',
     headingLine1: 'Sensory Lights & Equipment',
     headingLine2: 'to Stimulate, Soothe',
     highlight: '& Support',
-    highlightColor: '#c084fc',
+    highlightColor: '#208b49',
     subtext: 'A complete range of sensory lights and tools designed to create engaging sensory environments.',
     features: [
       { icon: Eye, label: 'Visual', label2: 'Stimulation' },
       { icon: Smile, label: 'Calms &', label2: 'Relaxes' },
       { icon: Brain, label: 'Improves Focus', label2: '& Attention' },
-      { icon: Star, label: 'Supports Sensory', label2: 'Development' },
+      { icon: Shield, label: 'Supports Sensory', label2: 'Development' },
     ],
-    primaryBtn: { text: 'EXPLORE SENSORY RANGE', color: '#7c3aed' },
-    outlineBtn: { text: 'REQUEST A QUOTE', outlineColor: '#a855f7' },
-    textColor: '#f3e8ff',
-    subtextColor: 'rgba(243,232,255,0.75)',
+    primaryBtn: { text: 'EXPLORE SENSORY RANGE', color: '#6d28d9' },
+    outlineBtn: { text: 'REQUEST A QUOTE' },
+    textColor: '#0e2a4a',
+    subtextColor: '#475569',
   },
   {
     id: 3,
@@ -117,13 +121,13 @@ const slides = [
     panelSolid: 'rgba(246, 250, 248, 0.97)',
     panelTransparent: 'rgba(246, 250, 248, 0)',
     accentColor: '#1a5fa8',
-    headingLine1: 'Occupational Therapy',
-    headingLine2: 'Equipment for',
+    headingLine1: 'Occupational Therapy Equipment',
+    headingLine2: 'for',
     highlight: 'Better Independence',
     highlightColor: '#208b49',
     subtext: 'Specialized OT tools and equipment to improve motor skills, daily living activities and overall independence.',
     features: [
-      { icon: Hand, label: 'Improves', label2: 'Motor Skills' },
+      { icon: Hand, label: 'Improves Motor', label2: 'Skills' },
       { icon: Layers, label: 'Enhances Daily', label2: 'Living Activities' },
       { icon: Target, label: 'Builds Strength', label2: '& Coordination' },
       { icon: Users, label: 'Encourages', label2: 'Independence' },
@@ -135,29 +139,21 @@ const slides = [
     id: 4,
     image: '/slide4_machines.jpg',
     panelTheme: 'blue',
-    panelSolid: 'rgba(230, 242, 255, 0.97)',
-    panelTransparent: 'rgba(230, 242, 255, 0)',
+    panelSolid: 'rgba(240, 248, 255, 0.97)',
+    panelTransparent: 'rgba(240, 248, 255, 0)',
     accentColor: '#1a5fa8',
     headingLine1: 'Comprehensive Range of',
     headingLine2: 'Physiotherapy Machines',
     highlight: 'for Every Clinical Need',
     highlightColor: '#208b49',
-    subtext: 'Reliable. Innovative. Effective. Everything you need for complete patient care.',
-    features: [
-      { icon: Zap, label: 'Advanced', label2: 'Technology' },
-      { icon: Waves, label: 'Electrotherapy', label2: '& Sono' },
-      { icon: Shield, label: 'Safe &', label2: 'Certified' },
-      { icon: CheckCircle, label: 'Clinically', label2: 'Proven' },
+    subtext: 'Reliable. Innovative. Effective.\nEverything you need for complete patient care.',
+    inlineFeatures: [
+      { icon: CheckCircle, label: 'Advanced Technology' },
+      { icon: CheckCircle, label: 'Safe' },
+      { icon: CheckCircle, label: 'Clinically Proven' },
     ],
-    primaryBtn: { text: 'VIEW ALL PRODUCTS', color: '#1a5fa8' },
+    primaryBtn: { text: 'VIEW ALL PRODUCTS', color: '#0f2a52' },
     outlineBtn: { text: 'REQUEST A QUOTE' },
-    sidePanel: [
-      { icon: Activity, text: 'Pain Management' },
-      { icon: Zap, text: 'Muscle Stimulation' },
-      { icon: Waves, text: 'Ultrasound Therapy' },
-      { icon: Target, text: 'Traction Therapy' },
-      { icon: Heart, text: 'Rehabilitation Support' },
-    ],
   },
 ];
 
@@ -238,15 +234,14 @@ function StickyHeader({ activePage, onNavigate }) {
               {item.hasDropdown && <ChevronDown size={13} className="hc-nav-chevron" />}
             </button>
           ))}
+          {/* CTA */}
+          <button
+            className="hc-header-cta"
+            onClick={() => { onNavigate('contact'); setMenuOpen(false); }}
+          >
+            REQUEST A QUOTE <ArrowRight size={14} />
+          </button>
         </nav>
-
-        {/* CTA */}
-        <button
-          className="hc-header-cta"
-          onClick={() => { onNavigate('contact'); setMenuOpen(false); }}
-        >
-          REQUEST A QUOTE <ArrowRight size={14} />
-        </button>
       </div>
     </header>
   );
@@ -327,6 +322,21 @@ function SlideContent({ slide, isActive }) {
                     <span className="hc-feature-label" style={{ color: iconLabelColor }}>
                       {f.label}<br />{f.label2}
                     </span>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          {/* Inline Feature icons row */}
+          {slide.inlineFeatures && (
+            <div className="hc-slide-inline-features" style={{ display: 'flex', gap: '16px', marginBottom: '22px', flexWrap: 'wrap', alignItems: 'center' }}>
+              {slide.inlineFeatures.map((f, i) => {
+                const Icon = f.icon;
+                return (
+                  <div className="hc-inline-feature-item" key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <Icon size={16} color="#208b49" strokeWidth={2.5} />
+                    <span style={{ fontSize: '11px', fontWeight: '800', color: iconLabelColor, letterSpacing: '0.02em' }}>{f.label}</span>
                   </div>
                 );
               })}

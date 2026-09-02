@@ -19,7 +19,7 @@ import CategoriesPage from './pages/CategoriesPage';
 
 // Data & Icons
 import { CONTACT, categories } from './data/siteData';
-import { Facebook, Instagram, Linkedin, Youtube, WhatsApp } from './components/icons/SocialIcons';
+import { Facebook, Instagram, Youtube, WhatsApp } from './components/icons/SocialIcons';
 
 const navItems = [
   { label: 'Home', page: 'home' },
@@ -46,9 +46,11 @@ function Footer() {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div>
-          <button className="brand footer-brand" onClick={() => navigate('home')}>
-            <img src="/logo.png" alt="Shivshakti Logo" className="site-logo" />
-            <span>SHIVSHAKTI <strong>HEALTHCARE</strong><small>EQUIPMENTS</small></span>
+          <button className="brand footer-brand" onClick={() => navigate('home')} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '16px', border: 'none', background: 'none', padding: 0, cursor: 'pointer', color: 'inherit' }}>
+            <div style={{ background: '#fff', padding: '6px 12px', borderRadius: '12px', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
+              <img src="/logo.png" alt="Shivshakti Logo" className="site-logo" style={{ height: '85px', width: 'auto', objectFit: 'contain', clipPath: 'inset(3px 0 0 0)', marginTop: '-3px' }} />
+            </div>
+            <span style={{ textAlign: 'left', lineHeight: '1.3', fontSize: '18px' }}>SHIVSHAKTI <strong>HEALTHCARE</strong><br /><small style={{ display: 'block', marginTop: '4px', fontSize: '12px', letterSpacing: '0.1em', color: '#0e2a4a', fontWeight: '800' }}>EQUIPMENTS</small></span>
           </button>
           <div className="footer-contact">
             <span><MapPin size={14} /> {CONTACT.address}</span>
@@ -68,16 +70,17 @@ function Footer() {
           <h3>Connect With Us</h3>
           <button className="whatsapp" onClick={() => navigate('contact')}>Chat on WhatsApp <ArrowRight size={15} /></button>
           <div className="socials">
-            <a href="#contact" aria-label="LinkedIn"><Linkedin size={17} /></a>
             <a href="https://www.facebook.com/share/1HJxtcBHZW/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook size={17} /></a>
             <a href="#contact" aria-label="YouTube"><Youtube size={17} /></a>
             <a href="https://www.instagram.com/shivshakti_healthcare_eqs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={17} /></a>
           </div>
         </div>
       </div>
-      <div className="container footer-bottom">
-        <span>© {new Date().getFullYear()} Shivshakti Healthcare Equipments. All rights reserved.</span>
-        <span>Made with care in India</span>
+      <div className="footer-bottom-wrapper">
+        <div className="container footer-bottom">
+          <span>© {new Date().getFullYear()} Shivshakti Healthcare Equipments. All Rights Reserved.</span>
+          <span>Designed with <span style={{ color: '#ff7474' }}>♥</span> for Better Healthcare</span>
+        </div>
       </div>
     </footer>
   );

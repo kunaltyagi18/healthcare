@@ -1,4 +1,4 @@
-import { Building2, Stethoscope, HeartHandshake, Activity, GraduationCap, BookOpen, Award, Headphones, Truck, Globe, ShieldCheck, Microscope, BadgeCheck, Factory, Sparkles, Dumbbell, Landmark } from 'lucide-react';
+import { Building2, Stethoscope, HeartHandshake, Activity, GraduationCap, BookOpen, Award, Headphones, Truck, Globe, ShieldCheck, Microscope, BadgeCheck, Factory, Sparkles, Dumbbell, Landmark, RefreshCw, Bed, Accessibility, Hospital, School } from 'lucide-react';
 
 export const CONTACT = {
   phone: '+91 89201 99593',
@@ -76,18 +76,18 @@ export const solutions = [
 ];
 
 export const qualityPoints = [
-  { title: 'Quality Management', icon: ShieldCheck },
+  { title: 'Quality Management', icon: Award },
   { title: 'Robust Testing Processes', icon: Microscope },
-  { title: 'Safe & Reliable Products', icon: BadgeCheck },
+  { title: 'Safe & Reliable Products', icon: ShieldCheck },
   { title: 'Ethical Manufacturing', icon: Factory },
-  { title: 'Continuous Improvement', icon: Sparkles },
+  { title: 'Continuous Improvement', icon: RefreshCw },
 ];
 
 export const industries = [
-  { title: 'Physiotherapy Clinics', icon: Stethoscope },
-  { title: 'Rehabilitation Centres', icon: HeartHandshake },
-  { title: 'Hospitals', icon: Building2 },
-  { title: 'Special Schools', icon: GraduationCap },
+  { title: 'Physiotherapy Clinics', icon: Bed },
+  { title: 'Rehabilitation Centres', icon: Accessibility },
+  { title: 'Hospitals', icon: Hospital },
+  { title: 'Special Schools', icon: School },
   { title: 'Wellness & Fitness Centres', icon: Dumbbell },
   { title: 'NGOs & Govt. Institutions', icon: Landmark },
 ];

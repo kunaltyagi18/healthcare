@@ -142,7 +142,7 @@ export default function CategoriesPage() {
             <Search size={18} className="cat-search-icon" />
             <input 
               type="text" 
-              className="cat-search-input" 
+              className="cat-page-search-input" 
               placeholder="Search categories..." 
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}

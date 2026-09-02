@@ -23,15 +23,42 @@ import {
 const certs = [
   {
     num: '01',
-    badge: 'FDA',
-    badgeStyle: 'fda',
-    title: 'FDA Compliance',
-    sub: 'FDA Regulatory Guideline for Food and Drug Administration',
-    desc: 'Assessed and certified for manufacturing, supply, import and export of physiotherapy, rehabilitation, occupational, surgical, fitness and beauty care equipment.',
-    link: '/certifications/FDA SHIVSHAKTI HEALTHCARE EQUIPMENTS.pdf',
+    badge: 'ISO',
+    badgeStyle: 'iso-blue',
+    title: 'ISO 9001:2015',
+    sub: 'Quality Management System',
+    desc: 'Reflects our dedication to continuous improvement and customer satisfaction.',
+    link: '/certifications/SHIVSHAKTI HEALTHCARE EQUIPMENTS (1).pdf',
   },
   {
     num: '02',
+    badge: 'ISO',
+    badgeStyle: 'iso-blue',
+    title: 'ISO 13485:2016',
+    sub: 'Quality Management System for Medical Devices',
+    desc: 'Ensures consistent quality and safety in every product and process.',
+    link: '/certifications/ISO_13485_2016_Certificate.pdf',
+  },
+  {
+    num: '03',
+    badge: 'ISO',
+    badgeStyle: 'iso-blue',
+    title: 'ISO 14001:2015',
+    sub: 'Environmental Management System',
+    desc: 'We follow responsible practices to protect the environment and build a sustainable future.',
+    link: '/certifications/ISO_14001_2015_Certificate.pdf',
+  },
+  {
+    num: '04',
+    badge: 'ISO',
+    badgeStyle: 'iso-blue',
+    title: 'ISO 45001:2018',
+    sub: 'Occupational Health & Safety Management Systems',
+    desc: 'Certifies our commitment to a safe and healthy working environment for our workforce.',
+    link: '/certifications/ISO_45001_2018_Certificate.pdf',
+  },
+  {
+    num: '05',
     badge: 'GMP',
     badgeStyle: 'gmp',
     title: 'GMP Certified',
@@ -40,52 +67,34 @@ const certs = [
     link: '/certifications/GMP_Certificate.pdf',
   },
   {
-    num: '03',
-    badge: 'ISO',
-    badgeStyle: 'iso-blue',
-    title: 'ISO 13485:2016',
-    sub: 'Medical Devices — Quality Management Systems',
-    desc: 'Ensures consistent quality and safety in the design, manufacture and supply of medical devices.',
-    link: '/certifications/ISO_13485_2016_Certificate.pdf',
-  },
-  {
-    num: '04',
-    badge: 'ISO',
-    badgeStyle: 'iso-green',
-    title: 'ISO 14001:2015',
-    sub: 'Environmental Management Systems',
-    desc: 'Reflects our commitment to responsible, environmentally sustainable manufacturing practices.',
-    link: '/certifications/ISO_14001_2015_Certificate.pdf',
-  },
-  {
-    num: '05',
-    badge: 'ISO',
-    badgeStyle: 'iso-teal',
-    title: 'ISO 45001:2018',
-    sub: 'Occupational Health & Safety Management Systems',
-    desc: 'Certifies our commitment to a safe and healthy working environment for our workforce.',
-    link: '/certifications/ISO_45001_2018_Certificate.pdf',
-  },
-  {
     num: '06',
+    badge: 'FDA',
+    badgeStyle: 'fda',
+    title: 'FDA Compliance',
+    sub: 'FDA Regulatory Guideline for Food and Drug Administration',
+    desc: 'Assessed and certified for manufacturing, supply, import and export of physiotherapy equipment.',
+    link: '/certifications/FDA SHIVSHAKTI HEALTHCARE EQUIPMENTS.pdf',
+  },
+  {
+    num: '07',
+    badge: 'CE',
+    badgeStyle: 'ce',
+    title: 'CE Certification',
+    sub: 'European Conformity',
+    desc: 'Meets essential European safety, health and environmental requirements.',
+    link: '/certifications/CE_CERTIFICATE_ANNEXURE_UP_TO_1009_NO_ACCO.pdf',
+  },
+  {
+    num: '08',
     badge: 'IEC',
     badgeStyle: 'iec',
     title: 'IEC 60601-1:2015',
     sub: 'Medical Electrical Equipment Safety Standard',
-    desc: 'Confirms our products meet essential international safety and performance requirements for medical electrical equipment.',
+    desc: 'Confirms our products meet essential international safety and performance requirements.',
     link: '/certifications/IEC_60601-1_2015_Certificate.pdf',
   },
   {
-    num: '07',
-    badge: '🏛',
-    badgeStyle: 'msme',
-    title: 'MSME / Udyam Registered',
-    sub: 'Government of India — Ministry of MSME',
-    desc: 'Registered under the Udyam scheme, recognized by the Government of India as a Micro enterprise in manufacturing.',
-    link: '/certifications/MSME SHIVSHAKTI NEW.pdf',
-  },
-  {
-    num: '08',
+    num: '09',
     badge: 'GST',
     badgeStyle: 'gst',
     title: 'GST Registered',
@@ -94,14 +103,23 @@ const certs = [
     link: '/certifications/GST Registration Certificate.pdf',
   },
   {
-    num: '09',
-    badge: 'CE',
-    badgeStyle: 'ce',
-    title: 'CE Certification',
-    sub: 'European Conformity — Annexure up to 1009',
-    desc: 'Certified to meet essential European safety, health and environmental protection requirements for medical equipment.',
-    link: '/certifications/CE_CERTIFICATE_ANNEXURE_UP_TO_1009_NO_ACCO.pdf',
+    num: '10',
+    badge: 'MSME',
+    badgeStyle: 'msme',
+    title: 'MSME Registered',
+    sub: 'Government of India',
+    desc: 'Recognized by the Ministry of MSME for our contribution to the growth of Indian manufacturing.',
+    link: '/certifications/MSME SHIVSHAKTI NEW.pdf',
   },
+  {
+    num: '11',
+    badge: 'IEC',
+    badgeStyle: 'iec',
+    title: 'IEC Certificate',
+    sub: 'Import Export Certificate',
+    desc: 'Certified by the Government of India for Import and Export.',
+    link: '/certifications/OEWPS3977E.pdf',
+  }
 ];
 
 
@@ -140,71 +158,92 @@ const commitments = [
 
 /* ── SUB-COMPONENTS ── */
 
-function CertBadge({ badge, style }) {
+export function CertBadge({ badge, style }) {
   if (style === 'iso-blue') {
     return (
-      <div className="qc-cert-logo qc-iso-blue">
-        <span>ISO</span>
-        <div className="qc-iso-inner">CERTIFIED</div>
-      </div>
-    );
-  }
-  if (style === 'iso-green') {
-    return (
-      <div className="qc-cert-logo qc-iso-green">
-        <span>ISO</span>
-        <div className="qc-iso-inner">CERTIFIED</div>
-      </div>
-    );
-  }
-  if (style === 'iso-teal') {
-    return (
-      <div className="qc-cert-logo qc-iso-teal">
-        <span>ISO</span>
-        <div className="qc-iso-inner">CERTIFIED</div>
-      </div>
-    );
-  }
-  if (style === 'fda') {
-    return (
-      <div className="qc-cert-logo qc-fda">
-        <span>FDA</span>
-      </div>
-    );
-  }
-  if (style === 'gmp') {
-    return (
-      <div className="qc-cert-logo qc-gmp">
-        <span>GMP</span>
-      </div>
-    );
-  }
-  if (style === 'iec') {
-    return (
-      <div className="qc-cert-logo qc-iec">
-        <span>IEC</span>
-      </div>
-    );
-  }
-  if (style === 'gst') {
-    return (
-      <div className="qc-cert-logo qc-gst">
-        <span>GST</span>
+      <div className="qc-cert-logo qc-iso">
+        <svg viewBox="0 0 100 100" width="80" height="80">
+          <circle cx="50" cy="50" r="45" fill="none" stroke="#1e4b85" strokeWidth="3" />
+          <path d="M50 5 C75 5 90 25 90 50 C90 75 75 95 50 95 C25 95 10 75 10 50 C10 25 25 5 50 5 Z" fill="none" stroke="#1e4b85" strokeWidth="2" opacity="0.4" />
+          <path d="M5 50 L95 50 M15 25 L85 25 M15 75 L85 75" fill="none" stroke="#1e4b85" strokeWidth="2" opacity="0.4" />
+          <path d="M35 10 C35 10 20 25 20 50 C20 75 35 90 35 90 M65 10 C65 10 80 25 80 50 C80 75 65 90 65 90" fill="none" stroke="#1e4b85" strokeWidth="2" opacity="0.4" />
+          <text x="50" y="65" fontSize="42" fontWeight="900" fill="#1e4b85" textAnchor="middle" letterSpacing="2">ISO</text>
+        </svg>
       </div>
     );
   }
   if (style === 'ce') {
     return (
       <div className="qc-cert-logo qc-ce">
-        <span>CE</span>
+        <svg viewBox="0 0 100 100" width="80" height="80">
+          <path d="M45 25 A 25 25 0 0 0 45 75 M90 25 A 25 25 0 0 0 90 75" fill="none" stroke="#101828" strokeWidth="8" />
+          <path d="M65 50 L85 50" fill="none" stroke="#101828" strokeWidth="8" />
+        </svg>
       </div>
     );
   }
   if (style === 'msme') {
     return (
       <div className="qc-cert-logo qc-msme">
-        <span style={{ fontSize: 28 }}>🏛</span>
-        <small>MSME</small>
+        <svg viewBox="0 0 100 100" width="70" height="70">
+          <path d="M50 15 L80 30 L80 60 C80 80 65 90 50 95 C35 90 20 80 20 60 L20 30 Z" fill="none" stroke="#101828" strokeWidth="5" />
+          <circle cx="50" cy="45" r="12" fill="none" stroke="#101828" strokeWidth="4" />
+          <path d="M35 75 C45 65 55 65 65 75" fill="none" stroke="#101828" strokeWidth="4" />
+        </svg>
+        <div className="qc-msme-text">MSME</div>
+      </div>
+    );
+  }
+  if (style === 'gmp') {
+    return (
+      <div className="qc-cert-logo qc-gmp">
+        <svg viewBox="0 0 100 100" width="80" height="80">
+          <circle cx="50" cy="50" r="45" fill="none" stroke="#7c3aed" strokeWidth="3" />
+          <path d="M30 45 L50 65 L70 30" fill="none" stroke="#7c3aed" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+        <div className="qc-msme-text" style={{color: '#7c3aed'}}>GMP</div>
+      </div>
+    );
+  }
+  if (style === 'fda') {
+    return (
+      <div className="qc-cert-logo qc-fda">
+        <svg viewBox="0 0 100 100" width="80" height="80">
+          <rect x="10" y="30" width="80" height="40" rx="8" fill="none" stroke="#d4281e" strokeWidth="5" />
+          <text x="50" y="58" fontSize="32" fontFamily="Arial Black, Impact, sans-serif" fontWeight="900" fill="#d4281e" textAnchor="middle" letterSpacing="0">FDA</text>
+        </svg>
+      </div>
+    );
+  }
+  if (style === 'iec') {
+    return (
+      <div className="qc-cert-logo qc-iec">
+        <svg viewBox="0 0 100 100" width="80" height="80">
+          <circle cx="50" cy="50" r="45" fill="none" stroke="#0e7490" strokeWidth="3" strokeDasharray="10 5" />
+          <text x="50" y="60" fontSize="28" fontWeight="900" fill="#0e7490" textAnchor="middle" letterSpacing="1">IEC</text>
+        </svg>
+      </div>
+    );
+  }
+  if (style === 'gst') {
+    return (
+      <div className="qc-cert-logo qc-gst">
+        <svg viewBox="0 0 100 100" width="80" height="80">
+          <path d="M50 10 L90 30 L90 70 L50 90 L10 70 L10 30 Z" fill="none" stroke="#b45309" strokeWidth="4" />
+          <text x="50" y="58" fontSize="24" fontWeight="900" fill="#b45309" textAnchor="middle">GST</text>
+        </svg>
+      </div>
+    );
+  }
+  if (style === 'mii') {
+    return (
+      <div className="qc-cert-logo qc-mii">
+        <svg viewBox="0 0 100 100" width="80" height="80">
+          <path d="M20 50 Q40 40 50 30 T80 50 T50 70 T20 50 Z" fill="none" stroke="#101828" strokeWidth="4" />
+          <circle cx="50" cy="50" r="5" fill="#101828" />
+          <path d="M40 55 L60 55" stroke="#101828" strokeWidth="3" />
+        </svg>
+        <div className="qc-mii-text">MAKE IN INDIA</div>
       </div>
     );
   }
@@ -212,14 +251,11 @@ function CertBadge({ badge, style }) {
 }
 
 export function CertificationGrid({ data }) {
-  const topRow = data.slice(0, 5);
-  const bottomRow = data.slice(5);
-
   const renderCard = (c) => {
     const CardElement = c.link ? 'a' : 'div';
     const cardProps = c.link
-      ? { href: c.link, target: "_blank", rel: "noopener noreferrer", className: "qc-cert-card clickable-card" }
-      : { className: "qc-cert-card" };
+      ? { href: c.link, target: "_blank", rel: "noopener noreferrer", className: `qc-cert-card qc-card-${c.badgeStyle} clickable-card` }
+      : { className: `qc-cert-card qc-card-${c.badgeStyle}` };
     return (
       <CardElement key={c.num} {...cardProps}>
         <CertBadge badge={c.badge} style={c.badgeStyle} />
@@ -238,8 +274,9 @@ export function CertificationGrid({ data }) {
 
   return (
     <div className="qc-cert-wrapper">
-      <div className="qc-cert-grid qc-cert-grid--5">{topRow.map(renderCard)}</div>
-      <div className="qc-cert-grid qc-cert-grid--4">{bottomRow.map(renderCard)}</div>
+      <div className="qc-cert-grid">
+        {data.map(renderCard)}
+      </div>
     </div>
   );
 }
@@ -272,10 +309,9 @@ export function CertificationsHero() {
         <div className="qc-hero-left">
           {/* Logo block */}
           <div className="qc-logo-block">
-            <svg width="48" height="48" viewBox="0 0 40 40" fill="none">
-              <path d="M20 2 L36 10 L36 24 C36 31 28 37 20 39 C12 37 4 31 4 24 L4 10 Z" fill="#0f2a52" />
-              <path d="M18 13 L18 27 M13 20 L27 20" stroke="white" strokeWidth="3" strokeLinecap="round" />
-            </svg>
+            <div style={{ height: '80px', overflow: 'hidden', marginTop: '-5px' }}>
+              <img src="/logo.png" alt="SVS Logo" style={{ height: '145px', width: 'auto', objectFit: 'contain', display: 'block', clipPath: 'inset(5px 0 0 0)' }} />
+            </div>
             <div>
               <strong>SHIVSHAKTI</strong>
               <span>HEALTHCARE EQUIPMENTS</span>
@@ -349,18 +385,69 @@ export function BottomBanner() {
       <div className="qc-bottom-inner">
         {/* Gold emblem */}
         <div className="qc-emblem">
-          <div className="qc-emblem-laurel">
-            <svg width="80" height="90" viewBox="0 0 80 90" fill="none">
-              <ellipse cx="40" cy="45" rx="38" ry="43" fill="none" stroke="#c9962e" strokeWidth="2.5" />
-              <path d="M12 68 Q40 80 68 68" stroke="#c9962e" strokeWidth="2" fill="none" />
-              <path d="M8 55 Q10 40 15 28 Q20 16 30 10" stroke="#c9962e" strokeWidth="1.5" fill="none" />
-              <path d="M72 55 Q70 40 65 28 Q60 16 50 10" stroke="#c9962e" strokeWidth="1.5" fill="none" />
-              {/* Shield cross */}
-              <path d="M40 20 L50 25 L50 36 C50 41 45 45 40 47 C35 45 30 41 30 36 L30 25 Z" fill="#c9962e" />
-              <path d="M38 27 L38 40 M34 33 L46 33" stroke="white" strokeWidth="2.2" strokeLinecap="round" />
+          <div className="qc-emblem-laurel" style={{ transform: 'scale(1.2)', transformOrigin: 'center' }}>
+            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" style={{ overflow: 'visible' }}>
+              <defs>
+                <linearGradient id="gold3d" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#fde08b" />
+                  <stop offset="50%" stopColor="#d4af37" />
+                  <stop offset="100%" stopColor="#aa7c11" />
+                </linearGradient>
+
+                <path id="leafL" d="M 0 0 C -5 -3 -7 -10 -2 -14 C 2 -8 4 -3 0 0 Z" fill="url(#gold3d)" />
+                <path id="leafR" d="M 0 0 C 5 -3 7 -10 2 -14 C -2 -8 -4 -3 0 0 Z" fill="url(#gold3d)" />
+              </defs>
+              {/* Bottom Stand / Plate */}
+              <ellipse cx="50" cy="96" rx="40" ry="7" fill="#081220" stroke="url(#gold3d)" strokeWidth="1.5" />
+              <ellipse cx="50" cy="96" rx="34" ry="4" fill="none" stroke="url(#gold3d)" strokeWidth="0.75" opacity="0.6" />
+
+              {/* Stems connected at the bottom */}
+              <g transform="translate(50, 95) scale(1.35, 1.05) translate(-50, -95)">
+                <path d="M 50 95 C 10 95 0 50 15 15" fill="none" stroke="url(#gold3d)" strokeWidth="2.5" strokeLinecap="round" />
+                <path d="M 50 95 C 90 95 100 50 85 15" fill="none" stroke="url(#gold3d)" strokeWidth="2.5" strokeLinecap="round" />
+
+                {/* Left Branch Leaves */}
+                <use href="#leafL" x="35" y="91" transform="rotate(-70 35 91)" />
+                <use href="#leafR" x="35" y="91" transform="rotate(-50 35 91)" />
+
+                <use href="#leafL" x="19" y="77" transform="rotate(-40 19 77)" />
+                <use href="#leafR" x="19" y="77" transform="rotate(-20 19 77)" />
+
+                <use href="#leafL" x="10" y="60" transform="rotate(-10 10 60)" />
+                <use href="#leafR" x="10" y="60" transform="rotate(10 10 60)" />
+
+                <use href="#leafL" x="8" y="42" transform="rotate(10 8 42)" />
+                <use href="#leafR" x="8" y="42" transform="rotate(30 8 42)" />
+
+                <use href="#leafL" x="12" y="24" transform="rotate(30 12 24)" />
+                <use href="#leafR" x="12" y="24" transform="rotate(50 12 24)" />
+
+                {/* Right Branch Leaves */}
+                <use href="#leafR" x="65" y="91" transform="rotate(70 65 91)" />
+                <use href="#leafL" x="65" y="91" transform="rotate(50 65 91)" />
+
+                <use href="#leafR" x="81" y="77" transform="rotate(40 81 77)" />
+                <use href="#leafL" x="81" y="77" transform="rotate(20 81 77)" />
+
+                <use href="#leafR" x="90" y="60" transform="rotate(10 90 60)" />
+                <use href="#leafL" x="90" y="60" transform="rotate(-10 90 60)" />
+
+                <use href="#leafR" x="92" y="42" transform="rotate(-10 92 42)" />
+                <use href="#leafL" x="92" y="42" transform="rotate(-30 92 42)" />
+
+                <use href="#leafR" x="88" y="24" transform="rotate(-30 88 24)" />
+                <use href="#leafL" x="88" y="24" transform="rotate(-50 88 24)" />
+              </g>
+
+              {/* Shield Main */}
+              <path d="M50 10 L80 16 L80 52 C80 75 50 90 50 90 C50 90 20 75 20 52 L20 16 Z" fill="#081020" stroke="url(#gold3d)" strokeWidth="7" strokeLinejoin="round" />
+              <path d="M50 15 L76 20 L76 51 C76 70 50 84 50 84 C50 84 24 70 24 51 L24 20 Z" fill="none" stroke="url(#gold3d)" strokeWidth="1" opacity="0.6" />
+              
+              {/* Inner Text & Cross */}
+              <path d="M50 33 L50 43 M45 38 L55 38" stroke="url(#gold3d)" strokeWidth="3" />
+              <text x="50" y="62" fontSize="18" fontFamily="Arial Black, Impact, sans-serif" fontWeight="900" fill="url(#gold3d)" textAnchor="middle" letterSpacing="0">SVS</text>
             </svg>
           </div>
-          <div className="qc-emblem-label">SVS</div>
         </div>
 
         {/* Heading + text */}

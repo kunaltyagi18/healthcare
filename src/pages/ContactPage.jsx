@@ -27,13 +27,17 @@ export default function ContactPage() {
           </div>
           <div className="contact-form-wrapper">
             <form className="contact-form" onSubmit={(event) => { event.preventDefault(); setSent(true); }}>
+              <div className="form-header" style={{ marginBottom: '30px' }}>
+                <span className="eyebrow" style={{ color: 'var(--blue)' }}>SEND QUERY</span>
+                <h2 style={{ fontSize: '28px', color: 'var(--navy)', fontWeight: 800, marginTop: '4px', letterSpacing: '-0.02em' }}>Contact our team</h2>
+              </div>
               <div className="form-row">
                 <label>Your name<input required placeholder="Enter your name" /></label>
                 <label>Phone number<input required placeholder="+91" /></label>
               </div>
               <label>Work email<input type="email" required placeholder="you@company.com" /></label>
               <label>What can we help with?<textarea required rows={4} placeholder="Tell us about your space or product requirement" /></label>
-              <button type="submit">{sent ? 'Request received' : 'Send enquiry'} <ArrowRight size={17} /></button>
+              <button type="submit" className="green-submit-btn">{sent ? 'Request received' : 'Send enquiry'} <ArrowRight size={17} /></button>
               {sent && <p className="success-message">Thank you. Our team will be in touch soon.</p>}
             </form>
           </div>
