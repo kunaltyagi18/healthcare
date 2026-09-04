@@ -37,20 +37,25 @@ function getPage() {
 }
 
 function navigate(page) {
-  window.location.hash = page === 'home' ? '' : page;
+  if (page === 'home') {
+    window.history.pushState("", document.title, window.location.pathname + window.location.search);
+    window.dispatchEvent(new Event('hashchange'));
+  } else {
+    window.location.hash = page;
+  }
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function Footer() {
   return (
     <footer className="site-footer">
-      <div className="container footer-grid">
+      <div className="footer-container footer-grid">
         <div>
           <button className="brand footer-brand" onClick={() => navigate('home')} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '16px', border: 'none', background: 'none', padding: 0, cursor: 'pointer', color: 'inherit' }}>
             <div style={{ background: '#fff', padding: '6px 12px', borderRadius: '12px', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
               <img src="/logo.png" alt="Shivshakti Logo" className="site-logo" style={{ height: '85px', width: 'auto', objectFit: 'contain', clipPath: 'inset(3px 0 0 0)', marginTop: '-3px' }} />
             </div>
-            <span style={{ textAlign: 'left', lineHeight: '1.3', fontSize: '18px' }}>SHIVSHAKTI <strong>HEALTHCARE</strong><br /><small style={{ display: 'block', marginTop: '4px', fontSize: '12px', letterSpacing: '0.1em', color: '#0e2a4a', fontWeight: '800' }}>EQUIPMENTS</small></span>
+            <span style={{ textAlign: 'left', lineHeight: '1.3', fontSize: '18px' }}>SHIVSHAKTI <strong>HEALTHCARE</strong><br /><small style={{ display: 'block', marginTop: '4px', fontSize: '15px', letterSpacing: '0.1em', color: '#208b49', fontWeight: '800' }}>EQUIPMENTS</small></span>
           </button>
           <div className="footer-contact">
             <span><MapPin size={14} /> {CONTACT.address}</span>
@@ -77,7 +82,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom-wrapper">
-        <div className="container footer-bottom">
+        <div className="footer-container footer-bottom">
           <span>© {new Date().getFullYear()} Shivshakti Healthcare Equipments. All Rights Reserved.</span>
           <span>Designed with <span style={{ color: '#ff7474' }}>♥</span> for Better Healthcare</span>
         </div>
@@ -100,12 +105,12 @@ function App() {
 
   const content =
     page === 'home' ? <HomePage page={page} onNavigate={onNavigate} /> :
-    page === 'about' ? <AboutUs /> :
-    page === 'products' ? <ProductsPage onNavigate={onNavigate} /> :
-    page === 'solutions' ? <SolutionsPage onNavigate={onNavigate} /> :
-    page === 'quality' ? <QualityPage /> :
-    page === 'catalogue' ? <CataloguePage /> :
-    <ContactPage />;
+      page === 'about' ? <AboutUs /> :
+        page === 'products' ? <ProductsPage onNavigate={onNavigate} /> :
+          page === 'solutions' ? <SolutionsPage onNavigate={onNavigate} /> :
+            page === 'quality' ? <QualityPage /> :
+              page === 'catalogue' ? <CataloguePage /> :
+                <ContactPage />;
 
   // For non-home pages, still show the new HeroSection header (without the carousel)
   // We render HeroSection only on home; other pages get a standalone header wrapper

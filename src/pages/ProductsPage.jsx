@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { 
   ChevronRight, Search, X, PackageSearch, ChevronDown,
-  Zap, Activity, RotateCw, Stethoscope, ShoppingCart, Hand, Circle, Thermometer, BedDouble,
+  Zap, Activity, ArrowUpDown, Stethoscope, ShoppingCart, Hand, Circle, Thermometer, BedDouble,
   HeartPulse, Puzzle, Sparkles, Grid, Dumbbell, Footprints, Target, Scissors, ClipboardCheck, Wind, Scale
 } from 'lucide-react';
 import { categories } from '../data/siteData';
@@ -13,7 +13,7 @@ const categoryGroups = [
       { name: 'Electrotherapy Equipments', icon: Zap },
       { name: 'Combination Electrotherapy Equipments', icon: Activity },
       { name: 'Electrotherapy Equipments Accessories', icon: Zap },
-      { name: 'Traction & CPM Therapy Equipments', icon: RotateCw },
+      { name: 'Traction & CPM Therapy Equipments', icon: ArrowUpDown },
     ],
   },
   {
@@ -137,8 +137,12 @@ export default function ProductsPage({ onNavigate }) {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Filter groups if a group filter is selected
-  const visibleGroups = filter ? categoryGroups.filter(g => g.title === filter) : categoryGroups;
+  const allCategoryItems = categoryGroups.flatMap(g => g.items.map(i => i.name));
+  
+  // Filter groups if a category filter is selected
+  const visibleGroups = filter 
+    ? categoryGroups.map(g => ({ ...g, items: g.items.filter(item => item.name === filter) })).filter(g => g.items.length > 0)
+    : categoryGroups;
 
   // Count total categories and total visible
   let totalCategories = 0;
@@ -155,7 +159,7 @@ export default function ProductsPage({ onNavigate }) {
       <section className="cat-page-header" style={{ background: 'linear-gradient(to bottom, #f8fafc, #ffffff)', padding: '64px 0 48px', textAlign: 'center' }}>
         <div className="container">
           <span className="cat-eyebrow" style={{ display: 'inline-block', color: '#208b49', fontSize: '13px', fontWeight: '800', letterSpacing: '0.1em', marginBottom: '12px' }}>OUR RANGE</span>
-          <h1 className="cat-heading" style={{ color: '#0e2a4a', fontSize: 'clamp(32px, 4vw, 42px)', fontWeight: '850', letterSpacing: '-0.02em', margin: '0 0 16px' }}>Explore Our Product Categories</h1>
+          <h1 className="cat-heading" style={{ color: '#1c5fa8', fontSize: 'clamp(32px, 4vw, 42px)', fontWeight: '850', letterSpacing: '-0.02em', margin: '0 0 16px' }}>Explore Our Product Categories</h1>
           <p className="cat-subtext" style={{ color: '#64748b', fontSize: '16px', maxWidth: '600px', margin: '0 auto 32px' }}>Browse our complete range of physiotherapy, rehabilitation and medical equipment categories.</p>
           
           <div className="cat-search-wrap" style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -202,13 +206,13 @@ export default function ProductsPage({ onNavigate }) {
                     >
                       All Categories
                     </li>
-                    {categoryGroups.map((g) => (
+                    {allCategoryItems.map((catName) => (
                       <li 
-                        key={g.title} 
-                        style={{ padding: '10px 16px', cursor: 'pointer', borderRadius: '8px', fontSize: '14.5px', color: filter === g.title ? '#208b49' : '#0e2a4a', background: filter === g.title ? '#f1f8f4' : 'transparent', fontWeight: filter === g.title ? '700' : '500' }}
-                        onClick={() => { setFilter(g.title); setIsOpen(false); }}
+                        key={catName} 
+                        style={{ padding: '10px 16px', cursor: 'pointer', borderRadius: '8px', fontSize: '14.5px', color: filter === catName ? '#208b49' : '#1c5fa8', background: filter === catName ? '#f1f8f4' : 'transparent', fontWeight: filter === catName ? '700' : '500' }}
+                        onClick={() => { setFilter(catName); setIsOpen(false); }}
                       >
-                        {g.title}
+                        {catName}
                       </li>
                     ))}
                   </ul>
@@ -239,7 +243,7 @@ export default function ProductsPage({ onNavigate }) {
 
               return (
                 <div className="cat-page-group" key={i} style={{ marginBottom: '48px' }}>
-                  <h3 className="cat-page-group-title" style={{ fontSize: '22px', fontWeight: '800', color: '#0e2a4a', margin: '0 0 24px', borderBottom: '2px solid #f1f5f9', paddingBottom: '12px' }}>{group.title}</h3>
+                  <h3 className="cat-page-group-title" style={{ fontSize: '22px', fontWeight: '800', color: '#1c5fa8', margin: '0 0 24px', borderBottom: '2px solid #f1f5f9', paddingBottom: '12px' }}>{group.title}</h3>
                   <div className="cat-prod-grid">
                     {filteredItems.map((item, idx) => {
                       const catData = categories.find(c => c.title === item.name);

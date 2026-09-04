@@ -350,6 +350,10 @@ export function CertificationsHero() {
           <p className="qc-hero-p">Our certifications reflect our unwavering commitment to quality, patient safety, responsible manufacturing and continuous innovation.</p>
           <p className="qc-hero-p bold">Every solution we deliver is supported by standards you can depend on, every time.</p>
 
+          <div className="qc-hero-bg-mobile">
+            <img src="/about_showroom.jpg" alt="Physiotherapy Showroom" />
+          </div>
+
           {/* Banner strip */}
           <div className="qc-banner-strip">
             {[
@@ -386,67 +390,7 @@ export function BottomBanner() {
         {/* Gold emblem */}
         <div className="qc-emblem">
           <div className="qc-emblem-laurel" style={{ transform: 'scale(1.2)', transformOrigin: 'center' }}>
-            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" style={{ overflow: 'visible' }}>
-              <defs>
-                <linearGradient id="gold3d" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#fde08b" />
-                  <stop offset="50%" stopColor="#d4af37" />
-                  <stop offset="100%" stopColor="#aa7c11" />
-                </linearGradient>
-
-                <path id="leafL" d="M 0 0 C -5 -3 -7 -10 -2 -14 C 2 -8 4 -3 0 0 Z" fill="url(#gold3d)" />
-                <path id="leafR" d="M 0 0 C 5 -3 7 -10 2 -14 C -2 -8 -4 -3 0 0 Z" fill="url(#gold3d)" />
-              </defs>
-              {/* Bottom Stand / Plate */}
-              <ellipse cx="50" cy="96" rx="40" ry="7" fill="#081220" stroke="url(#gold3d)" strokeWidth="1.5" />
-              <ellipse cx="50" cy="96" rx="34" ry="4" fill="none" stroke="url(#gold3d)" strokeWidth="0.75" opacity="0.6" />
-
-              {/* Stems connected at the bottom */}
-              <g transform="translate(50, 95) scale(1.35, 1.05) translate(-50, -95)">
-                <path d="M 50 95 C 10 95 0 50 15 15" fill="none" stroke="url(#gold3d)" strokeWidth="2.5" strokeLinecap="round" />
-                <path d="M 50 95 C 90 95 100 50 85 15" fill="none" stroke="url(#gold3d)" strokeWidth="2.5" strokeLinecap="round" />
-
-                {/* Left Branch Leaves */}
-                <use href="#leafL" x="35" y="91" transform="rotate(-70 35 91)" />
-                <use href="#leafR" x="35" y="91" transform="rotate(-50 35 91)" />
-
-                <use href="#leafL" x="19" y="77" transform="rotate(-40 19 77)" />
-                <use href="#leafR" x="19" y="77" transform="rotate(-20 19 77)" />
-
-                <use href="#leafL" x="10" y="60" transform="rotate(-10 10 60)" />
-                <use href="#leafR" x="10" y="60" transform="rotate(10 10 60)" />
-
-                <use href="#leafL" x="8" y="42" transform="rotate(10 8 42)" />
-                <use href="#leafR" x="8" y="42" transform="rotate(30 8 42)" />
-
-                <use href="#leafL" x="12" y="24" transform="rotate(30 12 24)" />
-                <use href="#leafR" x="12" y="24" transform="rotate(50 12 24)" />
-
-                {/* Right Branch Leaves */}
-                <use href="#leafR" x="65" y="91" transform="rotate(70 65 91)" />
-                <use href="#leafL" x="65" y="91" transform="rotate(50 65 91)" />
-
-                <use href="#leafR" x="81" y="77" transform="rotate(40 81 77)" />
-                <use href="#leafL" x="81" y="77" transform="rotate(20 81 77)" />
-
-                <use href="#leafR" x="90" y="60" transform="rotate(10 90 60)" />
-                <use href="#leafL" x="90" y="60" transform="rotate(-10 90 60)" />
-
-                <use href="#leafR" x="92" y="42" transform="rotate(-10 92 42)" />
-                <use href="#leafL" x="92" y="42" transform="rotate(-30 92 42)" />
-
-                <use href="#leafR" x="88" y="24" transform="rotate(-30 88 24)" />
-                <use href="#leafL" x="88" y="24" transform="rotate(-50 88 24)" />
-              </g>
-
-              {/* Shield Main */}
-              <path d="M50 10 L80 16 L80 52 C80 75 50 90 50 90 C50 90 20 75 20 52 L20 16 Z" fill="#081020" stroke="url(#gold3d)" strokeWidth="7" strokeLinejoin="round" />
-              <path d="M50 15 L76 20 L76 51 C76 70 50 84 50 84 C50 84 24 70 24 51 L24 20 Z" fill="none" stroke="url(#gold3d)" strokeWidth="1" opacity="0.6" />
-              
-              {/* Inner Text & Cross */}
-              <path d="M50 33 L50 43 M45 38 L55 38" stroke="url(#gold3d)" strokeWidth="3" />
-              <text x="50" y="62" fontSize="18" fontFamily="Arial Black, Impact, sans-serif" fontWeight="900" fill="url(#gold3d)" textAnchor="middle" letterSpacing="0">SVS</text>
-            </svg>
+              <img src="/svs_logo_final.png" alt="SVS Gold Shield Logo" style={{ width: '160px', height: 'auto', display: 'block', margin: '0 auto' }} />
           </div>
         </div>
 
@@ -457,7 +401,11 @@ export function BottomBanner() {
             QUALITY WE DELIVER.<br />
             CONFIDENCE YOU DESERVE.
           </h2>
-          <p>Our certifications represent more than approvals — they reflect our promise of safe, effective and reliable therapy solutions, every single day.</p>
+          <p>
+            Our certifications represent more than approvals —<br />
+            they reflect our promise of safe, effective and reliable<br />
+            therapy solutions, every single day.
+          </p>
         </div>
 
         {/* 2×2 grid */}

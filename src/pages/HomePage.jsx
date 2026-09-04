@@ -2,6 +2,7 @@ import { ChevronRight, Factory, ShieldCheck, Users, ArrowRight, Quote, Target, L
 import { SectionHeading, ReachStrip } from '../components/Shared';
 import { categories, solutions, qualityPoints, industries } from '../data/siteData';
 import { HeroSection } from '../HeroCarousel';
+import { solutionCards, SolutionCard } from './SolutionsPage';
 export default function HomePage({ page, onNavigate }) {
   const navigate = (p) => {
     if(onNavigate) onNavigate(p);
@@ -135,23 +136,11 @@ export default function HomePage({ page, onNavigate }) {
       </section>
 
       <section className="section-shell solutions-overview">
-        <div className="container">
+        <div className="container" style={{ maxWidth: '1400px' }}>
           <SectionHeading title="Solutions for Every Care Space" centered />
-          <div className="solutions-grid">
-            {solutions.map((item) => (
-              <button
-                className="solution-card"
-                key={item.title}
-                onClick={() => navigate('solutions')}
-                style={{ backgroundImage: `url(${item.img})` }}
-              >
-                <div className="sol-overlay" />
-                <div className="sol-content">
-                  <span>{item.eyebrow}</span>
-                  <h3>{item.title}</h3>
-                </div>
-                <b><ArrowRight size={18} /></b>
-              </button>
+          <div className="home-cards-grid" style={{ marginTop: '40px' }}>
+            {solutionCards.map((card) => (
+              <SolutionCard key={card.id} card={card} onNavigate={onNavigate} />
             ))}
           </div>
         </div>

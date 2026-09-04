@@ -37,7 +37,7 @@ const heroFeatures = [
   },
 ];
 
-const solutionCards = [
+export const solutionCards = [
   {
     id: 'physio',
     theme: 'blue',
@@ -117,7 +117,7 @@ function HeroFeature({ icon: Icon, color, title, desc }) {
   );
 }
 
-function SolutionCard({ card, onNavigate }) {
+export function SolutionCard({ card, onNavigate }) {
   return (
     <div className="sol-card" style={{ '--card-accent': card.accent, '--card-accent-light': card.accentLight }}>
       <div className="sol-card-top-bar" style={{ background: card.accent }} />

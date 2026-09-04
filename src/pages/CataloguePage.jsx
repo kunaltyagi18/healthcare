@@ -120,7 +120,7 @@ export default function CataloguePage() {
           <div className="cat-bs-divider" />
           <div className="cat-bs-right">
             <span>Better Equipment.</span>
-            <span>Better Care. <span style={{ borderBottom: '2px solid #208b49' }}>Better Tomorrow.</span></span>
+            <span>Better Care. <span style={{ color: '#208b49' }}>Better Tomorrow.</span></span>
           </div>
         </div>
       </div>

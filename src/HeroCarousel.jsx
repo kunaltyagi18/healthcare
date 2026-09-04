@@ -88,7 +88,7 @@ const slides = [
       { icon: Target, label: 'Faster', label2: 'Recovery' },
       { icon: Users, label: 'Trusted by', label2: 'Professionals' },
     ],
-    primaryBtn: { text: 'EXPLORE PHYSIOTHERAPY RANGE', color: '#0f2a52' },
+    primaryBtn: { text: 'EXPLORE PHYSIOTHERAPY RANGE', color: '#1c5fa8' },
     outlineBtn: { text: 'REQUEST A QUOTE' },
   },
   {
@@ -152,7 +152,7 @@ const slides = [
       { icon: CheckCircle, label: 'Safe' },
       { icon: CheckCircle, label: 'Clinically Proven' },
     ],
-    primaryBtn: { text: 'VIEW ALL PRODUCTS', color: '#0f2a52' },
+    primaryBtn: { text: 'VIEW ALL PRODUCTS', color: '#1c5fa8' },
     outlineBtn: { text: 'REQUEST A QUOTE' },
   },
 ];
