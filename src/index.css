@@ -207,9 +207,10 @@ img {
 }
 
 .site-logo {
-  height: 55px;
+  height: 90px;
   object-fit: contain;
   clip-path: inset(4px 0 0 0);
+  mix-blend-mode: multiply;
 }
 
 .main-nav {
@@ -384,8 +385,8 @@ img {
 .hc-header-inner {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 40px;
-  height: 84px;
+  padding: 0 1px;
+  height: 96px;
   display: flex;
   align-items: center;
   gap: 0;
@@ -395,7 +396,7 @@ img {
 .hc-logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 7px;
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -406,9 +407,10 @@ img {
 }
 
 .hc-logo img {
-  height: 60px;
+  height: 90px;
   width: auto;
   object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
 .hc-logo-mark {
@@ -437,7 +439,7 @@ img {
 }
 
 .hc-logo-name {
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 900;
   color: var(--blue);
   letter-spacing: 0.03em;
@@ -445,11 +447,10 @@ img {
 }
 
 .hc-logo-sub {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 800;
 
   color: #208b49;
-  ;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   line-height: 1.1;
@@ -459,7 +460,6 @@ img {
   font-size: 10px;
 
   color: #64748b;
-  ;
   font-weight: 600;
   letter-spacing: 0.05em;
   line-height: 1;
@@ -485,7 +485,6 @@ img {
   font-weight: 700;
 
   color: #475569;
-  ;
   cursor: pointer;
   position: relative;
   white-space: nowrap;
@@ -531,14 +530,14 @@ img {
 .hc-header-cta {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   margin-left: 16px;
-  padding: 12px 24px;
+  padding: 8px 18px;
   background: linear-gradient(135deg, var(--green) 0%, #177039 100%);
   color: #fff;
   border: 0;
-  border-radius: 30px;
-  font-size: 13.5px;
+  border-radius: 20px;
+  font-size: 12.5px;
   font-weight: 800;
   letter-spacing: 0.05em;
   white-space: nowrap;
@@ -561,7 +560,6 @@ img {
   background: transparent;
 
   color: #1c5fa8;
-  ;
   cursor: pointer;
   padding: 6px;
   margin-left: auto;
@@ -807,7 +805,6 @@ img {
   background: rgba(255, 255, 255, 0.9);
 
   color: #1c5fa8;
-  ;
   border: 1px solid rgba(255, 255, 255, 0.7);
   cursor: pointer;
   transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
@@ -908,7 +905,6 @@ img {
   place-items: center;
 
   color: #5bbf8a;
-  ;
   flex-shrink: 0;
 }
 
@@ -1044,16 +1040,16 @@ img {
     align-items: center;
   }
 
-  .site-logo {
-    height: 48px;
+  .hc-logo img {
+    height: 75px;
   }
 
   .hc-logo-name {
-    font-size: 13px;
+    font-size: 20px;
   }
 
   .hc-logo-sub {
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0.1em;
   }
 
@@ -1067,6 +1063,11 @@ img {
     margin-left: auto;
     z-index: 100;
     position: relative;
+  }
+
+  .hc-menu-toggle svg {
+    width: 32px;
+    height: 32px;
   }
 
   .hc-carousel {
@@ -1653,7 +1654,6 @@ img {
   padding: 0 14px;
 
   color: #1c5fa8;
-  ;
   transition: transform .25s ease;
 }
 
@@ -1680,7 +1680,6 @@ img {
   justify-content: center;
 
   color: #6f8295;
-  ;
   flex-shrink: 0;
   transition: color .25s ease, transform .25s ease;
 }
@@ -1699,7 +1698,6 @@ img {
 .industry-strip-item:hover .industry-icon {
 
   color: #1a5fa8;
-  ;
   transform: translateY(-2px);
 }
 
@@ -1709,7 +1707,6 @@ img {
   margin: 0;
 
   color: #1c5fa8;
-  ;
   font-size: 11px;
   font-weight: 600;
   line-height: 1.35;
@@ -1758,7 +1755,6 @@ img {
   font-weight: 700;
 
   color: #1c5fa8;
-  ;
   line-height: 1.3;
 }
 
@@ -1767,12 +1763,10 @@ img {
   font-size: 18px;
 
   color: #475569;
-  ;
   max-width: 650px;
   margin: 0 auto;
   line-height: 1.6;
 }
-
 
 /* TESTIMONIAL */
 .testimonial-section {
@@ -2397,8 +2391,9 @@ img {
 
 .home-cards-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 28px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
 }
 
 .home-cards-grid .sol-card-tags {
@@ -2459,16 +2454,47 @@ img {
 
   @media (max-width: 600px) {
     .home-cards-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
+      grid-template-columns: 1fr;
+      gap: 20px;
     }
 
     .home-cards-grid .sol-card-header {
-      padding: 10px 8px 6px;
+      padding: 16px 18px 10px;
     }
 
     .home-cards-grid .sol-card-body {
-      padding: 8px 8px 36px;
+      padding: 14px 18px 62px;
+    }
+
+    .home-cards-grid .sol-card-title {
+      font-size: 16px;
+    }
+
+    .home-cards-grid .sol-card-desc {
+      font-size: 13px;
+      line-height: 1.55;
+      -webkit-line-clamp: unset;
+    }
+
+    .home-cards-grid .sol-card-tags {
+      gap: 14px 8px;
+    }
+
+    .home-cards-grid .sol-tag span {
+      font-size: 10px;
+      line-height: 1.25;
+    }
+
+    .home-cards-grid .sol-tag svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .home-cards-grid .sol-card-arrow {
+      width: 40px;
+      height: 40px;
+      bottom: 14px;
+      right: 16px;
     }
   }
 }
@@ -2615,7 +2641,6 @@ img {
   letter-spacing: 0.06em;
   margin: 0;
   white-space: nowrap;
-  ;
   letter-spacing: 0.06em;
   margin: 0;
   white-space: nowrap;
@@ -3277,7 +3302,6 @@ img {
   border-radius: 12px;
 }
 
-
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -3818,7 +3842,6 @@ img {
 
   color: #1c5fa8;
   margin: 0;
-  ;
   margin: 0;
 }
 
@@ -4348,7 +4371,6 @@ img {
 
   color: #c9962e;
   font-size: 10px;
-  ;
   font-size: 10px;
   padding-left: 70px;
   margin: 2px 0;
@@ -4837,7 +4859,6 @@ img {
   -webkit-text-fill-color: transparent;
 
   color: #e0a316;
-  ;
   line-height: 1.45;
   letter-spacing: 0.04em;
   margin: 0 0 14px;
@@ -5229,7 +5250,6 @@ img {
   color: #1c5fa8;
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
-  ;
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
@@ -5295,7 +5315,6 @@ img {
   color: #1a5fa8;
   margin-bottom: 16px;
   transition: background 0.2s, color 0.2s;
-  ;
   margin-bottom: 16px;
   transition: background 0.2s, color 0.2s;
 }
@@ -5438,7 +5457,6 @@ img {
   color: #208b49;
   font-style: italic;
   font-size: 22px;
-  ;
   font-style: italic;
   font-size: 22px;
   margin-bottom: 4px;
@@ -5505,7 +5523,6 @@ img {
   font-size: 15px;
   line-height: 1.6;
   max-width: 600px;
-  ;
   font-size: 15px;
   line-height: 1.6;
   max-width: 600px;
@@ -5692,7 +5709,6 @@ img {
   font-size: 16px;
   font-weight: 800;
   margin: 0 0 10px;
-  ;
   font-size: 16px;
   font-weight: 800;
   margin: 0 0 10px;
@@ -5818,7 +5834,6 @@ img {
   font-size: 12px;
   line-height: 1.4;
   margin: 0;
-  ;
   font-size: 12px;
   line-height: 1.4;
   margin: 0;
@@ -6071,7 +6086,6 @@ img {
   }
 }
 
-
 /* About Us Mobile Spacing Fix */
 @media (max-width: 600px) {
   .au-s3 {
@@ -6082,7 +6096,6 @@ img {
     margin-bottom: 30px !important;
   }
 }
-
 
 /* Quality Page Divider Mobile Spacing Fix */
 @media (max-width: 600px) {
@@ -6097,7 +6110,6 @@ img {
   }
 }
 
-
 /* Fix for gap between icon and text in Quality bottom grid */
 .qc-bottom-g-item {
   justify-content: flex-start !important;
@@ -6106,7 +6118,6 @@ img {
 .qc-bottom-g-item>span {
   text-align: left !important;
 }
-
 
 /* Fix for catalogue bottom strip divider on mobile */
 @media (max-width: 900px) {

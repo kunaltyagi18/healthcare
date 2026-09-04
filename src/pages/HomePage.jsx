@@ -136,7 +136,7 @@ export default function HomePage({ page, onNavigate }) {
       </section>
 
       <section className="section-shell solutions-overview">
-        <div className="container" style={{ maxWidth: '1400px' }}>
+        <div className="container" style={{ width: 'min(1740px, calc(100% - 48px))', maxWidth: 'none' }}>
           <SectionHeading title="Solutions for Every Care Space" centered />
           <div className="home-cards-grid" style={{ marginTop: '40px' }}>
             {solutionCards.map((card) => (
