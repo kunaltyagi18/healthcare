@@ -9,7 +9,6 @@ import {
   ChevronRight,
   Eye,
   Hand,
-  Heart,
   Layers,
   Mail,
   MapPin,
@@ -17,10 +16,8 @@ import {
   Phone,
   Shield,
   Smile,
-  Star,
   Target,
   Users,
-  Waves,
   Zap,
   X,
 } from 'lucide-react';
@@ -204,7 +201,7 @@ function StickyHeader({ activePage, onNavigate }) {
       <div className="hc-header-inner">
         {/* Logo */}
         <button className="hc-logo" onClick={() => onNavigate('home')} aria-label="Go to home">
-          <img src="/logo.png" alt="Shivshakti Logo" className="site-logo" />
+          <img src="/svs_logo_new.png" alt="Shivshakti Logo" className="site-logo" />
           <div className="hc-logo-text">
             <span className="hc-logo-name">SHIVSHAKTI</span>
             <span className="hc-logo-sub">HEALTHCARE EQUIPMENTS</span>

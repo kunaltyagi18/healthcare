@@ -15,11 +15,10 @@ import SolutionsPage from './pages/SolutionsPage';
 import QualityPage from './pages/QualityPage';
 import CataloguePage from './pages/CataloguePage';
 import ContactPage from './pages/ContactPage';
-import CategoriesPage from './pages/CategoriesPage';
 
 // Data & Icons
-import { CONTACT, categories } from './data/siteData';
-import { Facebook, Instagram, Youtube, WhatsApp } from './components/icons/SocialIcons';
+import { CONTACT } from './data/siteData';
+import { Facebook, Instagram, Youtube } from './components/icons/SocialIcons';
 
 const navItems = [
   { label: 'Home', page: 'home' },
@@ -29,6 +28,15 @@ const navItems = [
   { label: 'Quality & Certifications', page: 'quality' },
   { label: 'Catalogue', page: 'catalogue' },
   { label: 'Contact Us', page: 'contact' },
+];
+
+const footerProductCategories = [
+  'Electrotherapy Equipment',
+  'Sensory Therapy Equipment',
+  'Occupational Therapy Equipment',
+  'Exercise Therapy Equipment',
+  'Rehabilitation Equipment',
+  'Treatment Tables',
 ];
 
 function getPage() {
@@ -52,10 +60,10 @@ function Footer() {
       <div className="footer-container footer-grid">
         <div>
           <button className="brand footer-brand" onClick={() => navigate('home')} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '16px', border: 'none', background: 'none', padding: 0, cursor: 'pointer', color: 'inherit' }}>
-            <div style={{ background: '#fff', padding: '6px 12px', borderRadius: '12px', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
-              <img src="/logo.png" alt="Shivshakti Logo" className="site-logo" style={{ height: '85px', width: 'auto', objectFit: 'contain', clipPath: 'inset(3px 0 0 0)', marginTop: '-3px' }} />
+            <div className="footer-logo-frame">
+              <img src="/svs_logo_new.png" alt="Shivshakti Logo" className="site-logo footer-logo" />
             </div>
-            <span style={{ textAlign: 'left', lineHeight: '1.3', fontSize: '18px' }}>SHIVSHAKTI <strong>HEALTHCARE</strong><br /><small style={{ display: 'block', marginTop: '4px', fontSize: '15px', letterSpacing: '0.1em', color: '#208b49', fontWeight: '800' }}>EQUIPMENTS</small></span>
+            <span style={{ textAlign: 'left', lineHeight: '1.3', fontSize: '18px' }}>SHIVSHAKTI <strong>HEALTHCARE</strong><br /><small style={{ display: 'block', marginTop: '4px', fontSize: '15px', letterSpacing: '0.1em', color: '#fff', fontWeight: '800' }}>EQUIPMENTS</small></span>
           </button>
           <div className="footer-contact">
             <span><MapPin size={14} /> {CONTACT.address}</span>
@@ -68,8 +76,10 @@ function Footer() {
           {navItems.slice(0, 6).map((item) => <button key={item.page} onClick={() => navigate(item.page)}>{item.label}</button>)}
         </div>
         <div>
-          <h3>Our Products</h3>
-          {categories.slice(0, 6).map((item) => <button key={item.title} onClick={() => navigate('products')}>{item.title}</button>)}
+          <h3>Product Catalogue</h3>
+          {footerProductCategories.map((category) => (
+            <button key={category} onClick={() => navigate('products')}>{category}</button>
+          ))}
         </div>
         <div>
           <h3>Connect With Us</h3>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ArrowRight, Phone, Mail, MapPin } from 'lucide-react';
 import { PageIntro } from '../components/Shared';
 import { CONTACT } from '../data/siteData';
@@ -37,7 +37,7 @@ export default function ContactPage() {
               </div>
               <label>Work email<input type="email" required placeholder="you@company.com" /></label>
               <label>What can we help with?<textarea required rows={4} placeholder="Tell us about your space or product requirement" /></label>
-              <button type="submit" className="green-submit-btn">{sent ? 'Request received' : 'Send enquiry'} <ArrowRight size={17} /></button>
+              <button type="submit" className="submit-enquiry-btn">{sent ? 'Request received' : 'Send enquiry'} <ArrowRight size={17} /></button>
               {sent && <p className="success-message">Thank you. Our team will be in touch soon.</p>}
             </form>
           </div>

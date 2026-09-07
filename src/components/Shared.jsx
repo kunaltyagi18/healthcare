@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 export function SectionHeading({ eyebrow, title, description, centered = false, light = false }) {

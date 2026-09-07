@@ -1,38 +1,16 @@
-import { ChevronRight, Factory, ShieldCheck, Users, ArrowRight, Quote, Target, Lightbulb, BadgeCheck, Headphones, Globe } from 'lucide-react';
+import { Factory, ShieldCheck, Users, Quote, Target, Lightbulb, BadgeCheck, Headphones, Globe } from 'lucide-react';
 import { SectionHeading, ReachStrip } from '../components/Shared';
-import { categories, solutions, qualityPoints, industries } from '../data/siteData';
+import { qualityPoints, industries } from '../data/siteData';
 import { HeroSection } from '../HeroCarousel';
-import { solutionCards, SolutionCard } from './SolutionsPage';
+import { solutionCards } from '../data/solutionCards';
+import { SolutionCard } from './SolutionsPage';
+import FeaturedProducts from '../components/FeaturedProducts';
 export default function HomePage({ page, onNavigate }) {
-  const navigate = (p) => {
-    if(onNavigate) onNavigate(p);
-  };
-
   return (
     <>
       <HeroSection activePage={page} onNavigate={onNavigate} />
 
-      <section className="section-shell category-section">
-        <div className="container">
-          <SectionHeading title="Our Product Categories" centered />
-          <div className="category-grid">
-            {categories.slice(0, 8).map((item) => (
-              <button className="category-card" key={item.title} onClick={() => navigate('products')}>
-                <div className="cat-img-wrap">
-                  <img src={item.img} alt={item.title} />
-                </div>
-                <h3>{item.title}</h3>
-                <span className="text-link">View Products <ChevronRight size={14} /></span>
-              </button>
-            ))}
-          </div>
-          <div className="view-all-wrap">
-            <button className="view-all-btn" onClick={() => navigate('products')}>
-              View All Categories <ArrowRight size={16} strokeWidth={2.5} />
-            </button>
-          </div>
-        </div>
-      </section>
+      <FeaturedProducts onNavigate={onNavigate} />
 
       <section className="au-s1">
         {/* Left: Text */}

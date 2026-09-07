@@ -1,6 +1,5 @@
 import {
   Award,
-  Diamond,
   Eye,
   Gem,
   Globe,
@@ -14,8 +13,6 @@ import {
   Phone,
   Settings,
   ShieldCheck,
-  Sparkles,
-  TrendingUp,
   Users,
 } from 'lucide-react';
 
@@ -158,7 +155,7 @@ const commitments = [
 
 /* ── SUB-COMPONENTS ── */
 
-export function CertBadge({ badge, style }) {
+export function CertBadge({ style }) {
   if (style === 'iso-blue') {
     return (
       <div className="qc-cert-logo qc-iso">
@@ -309,8 +306,8 @@ export function CertificationsHero() {
         <div className="qc-hero-left">
           {/* Logo block */}
           <div className="qc-logo-block">
-            <div style={{ height: '80px', overflow: 'hidden', marginTop: '-5px' }}>
-              <img src="/logo.png" alt="SVS Logo" style={{ height: '145px', width: 'auto', objectFit: 'contain', display: 'block', clipPath: 'inset(5px 0 0 0)' }} />
+            <div className="qc-logo-image">
+              <img src="/svs_logo_new.png" alt="SVS Logo" className="qc-page-logo" />
             </div>
             <div>
               <strong>SHIVSHAKTI</strong>

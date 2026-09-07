@@ -1,11 +1,8 @@
 import {
-  Activity, ArrowRight, BadgeCheck, Building2, Dumbbell,
-  GraduationCap, HeartHandshake, Layers, Lightbulb,
-  Maximize2, Settings, ShieldCheck, Sparkles,
-  Stethoscope, Target, Users, Landmark,
-  Zap, Eye, Hand, Footprints, Star, FlipHorizontal,
+  ArrowRight, Lightbulb, Settings, ShieldCheck, Target,
 } from 'lucide-react';
 import { industries } from '../data/siteData';
+import { solutionCards } from '../data/solutionCards';
 
 /* ─────────────────────────────────────────
    DATA
@@ -34,69 +31,6 @@ const heroFeatures = [
     color: '#f97316',
     title: 'Better Outcomes',
     desc: 'Enhanced care and recovery',
-  },
-];
-
-export const solutionCards = [
-  {
-    id: 'physio',
-    theme: 'blue',
-    accent: '#1a5fa8',
-    accentLight: '#eef4fc',
-    title: 'Physiotherapy Clinic Setup',
-    img: '/sol_physio.jpg',
-    desc: 'Well-designed physiotherapy clinics that enable effective treatment, support faster recovery and enhance patient comfort.',
-    tags: [
-      { icon: Layers, label: 'Treatment Tables' },
-      { icon: Zap, label: 'Electrotherapy Equipment' },
-      { icon: Activity, label: 'Exercise Equipment' },
-      { icon: Maximize2, label: 'Ergonomic Design' },
-    ],
-  },
-  {
-    id: 'rehab',
-    theme: 'green',
-    accent: '#208b49',
-    accentLight: '#edf7f1',
-    title: 'Rehabilitation Centre Setup',
-    img: '/sol_rehab.jpg',
-    desc: 'Comprehensive rehabilitation centre solutions focused on recovery, mobility, independence and overall well-being.',
-    tags: [
-      { icon: Activity, label: 'Neuro Rehab Equipment' },
-      { icon: Footprints, label: 'Mobility Training' },
-      { icon: Target, label: 'Strength & Balance Training' },
-      { icon: HeartHandshake, label: 'Post-Surgical Rehabilitation' },
-    ],
-  },
-  {
-    id: 'sensory',
-    theme: 'purple',
-    accent: '#7c3aed',
-    accentLight: '#f5f0ff',
-    title: 'Sensory Room Solutions',
-    img: '/sol_sensory.jpg',
-    desc: 'Engaging sensory spaces that support relaxation, sensory integration, focus and emotional well-being.',
-    tags: [
-      { icon: Star, label: 'Sensory Lighting' },
-      { icon: FlipHorizontal, label: 'Interactive Panels' },
-      { icon: Sparkles, label: 'Soft Play Equipment' },
-      { icon: Eye, label: 'Tactile & Visual Stimuli' },
-    ],
-  },
-  {
-    id: 'ot',
-    theme: 'orange',
-    accent: '#f97316',
-    accentLight: '#fff5ed',
-    title: 'Occupational Therapy Space',
-    img: '/sol_hospital.jpg',
-    desc: 'Functional occupational therapy spaces that build motor skills, independence and confidence in daily living.',
-    tags: [
-      { icon: Hand, label: 'Swings & Climbers' },
-      { icon: BadgeCheck, label: 'Fine Motor Activities' },
-      { icon: Users, label: 'Daily Living Training' },
-      { icon: Layers, label: 'Functional Activities' },
-    ],
   },
 ];
 

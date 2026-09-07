@@ -1,4 +1,4 @@
-import { Building2, Stethoscope, HeartHandshake, Activity, GraduationCap, BookOpen, Award, Headphones, Truck, Globe, ShieldCheck, Microscope, BadgeCheck, Factory, Sparkles, Dumbbell, Landmark, RefreshCw, Bed, Accessibility, Hospital, School } from 'lucide-react';
+import { Building2, Stethoscope, HeartHandshake, Activity, GraduationCap, BookOpen, Award, Headphones, Truck, Globe, ShieldCheck, Microscope, Factory, Dumbbell, Landmark, RefreshCw, Bed, Accessibility, Hospital, School } from 'lucide-react';
 
 export const CONTACT = {
   phone: '+91 89201 99593',
@@ -27,39 +27,6 @@ export const catalogueServing = [
   { icon: Activity, title: 'THERAPY\nCENTRES' },
   { icon: GraduationCap, title: 'INSTITUTIONS &\nTRAINING CENTRES' }
 ];
-
-export const categories = [
-  { title: 'Electrotherapy Equipments', img: '/cat_electro.jpg' },
-  { title: 'Combination Electrotherapy Equipments', img: '/cat_electro.jpg' },
-  { title: 'Electrotherapy Equipments Accessories', img: '/cat_electro.jpg' },
-  { title: 'Traction & CPM Therapy Equipments', img: '/cat_physio.jpg' },
-  { title: 'Physiotherapy Equipments', img: '/cat_physio.jpg' },
-  { title: 'Medical Trolley & Stools', img: '/cat_table.jpg' },
-  { title: 'Hand & Leg Physiotherapy Equipments', img: '/cat_physio.jpg' },
-  { title: 'Physiotherapy Exercise Balls', img: '/cat_exercise.jpg' },
-  { title: 'Hot and Cold Therapy Equipments', img: '/cat_physio.jpg' },
-  { title: 'Treatment Tables', img: '/cat_table.jpg' },
-  { title: 'Rehabilitation Equipments', img: '/cat_rehab.jpg' },
-  { title: 'Occupational Therapy Equipments', img: '/cat_occ.jpg' },
-  { title: 'Sensory Therapy Equipments', img: '/cat_sensory.jpg' },
-  { title: 'Peg Boards', img: '/cat_occ.jpg' },
-  { title: 'Puzzles', img: '/cat_occ.jpg' },
-  { title: 'Puzzles & Trays', img: '/cat_occ.jpg' },
-  { title: 'Flash Cards', img: '/cat_occ.jpg' },
-  { title: 'Exercise Therapy Equipments', img: '/cat_exercise.jpg' },
-  { title: 'Gait & Balance Training Equipment', img: '/cat_rehab.jpg' },
-  { title: 'Fitness Equipments', img: '/cat_exercise.jpg' },
-  { title: 'Acupuncture Therapy Equipments', img: '/cat_physio.jpg' },
-  { title: 'Surgical Equipments', img: '/cat_physio.jpg' },
-  { title: 'Assessment & Measurement Equipment', img: '/cat_physio.jpg' },
-  { title: 'Blood Circulation & Air Compression Therapy Equipments', img: '/cat_physio.jpg' },
-  { title: 'Chiro & Physio Massager', img: '/cat_physio.jpg' },
-  { title: 'BTL Physiotherapy Equipments', img: '/cat_electro.jpg' },
-  { title: 'Tapsi Physiotherapy Equipments', img: '/cat_electro.jpg' },
-  { title: 'HMS Physiotherapy Equipments', img: '/cat_electro.jpg' },
-  { title: 'Slimming Equipment', img: '/cat_exercise.jpg' },
-];
-
 
 export const reasons = [
   { title: 'Pan-India Delivery', description: 'Fast and reliable delivery across India.', icon: Truck, color: '#1c8a4b' },

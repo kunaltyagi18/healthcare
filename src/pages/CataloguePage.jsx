@@ -1,5 +1,4 @@
-import React from 'react';
-import { BookOpen, ChevronLeft, ChevronRight, Phone, ShieldCheck } from 'lucide-react';
+import { BookOpen, Phone, ShieldCheck } from 'lucide-react';
 import { catalogueServing, catalogueWhyConnect, CONTACT, IMAGES } from '../data/siteData';
 import { WhatsApp } from '../components/icons/SocialIcons';
 
