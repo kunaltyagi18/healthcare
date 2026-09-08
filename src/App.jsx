@@ -3,7 +3,8 @@ import {
   ArrowRight,
   MapPin,
   Phone,
-  Mail
+  Mail,
+  X
 } from 'lucide-react';
 import { HeroSection } from './HeroCarousel.jsx';
 
@@ -18,7 +19,7 @@ import ContactPage from './pages/ContactPage';
 
 // Data & Icons
 import { CONTACT } from './data/siteData';
-import { Facebook, Instagram, Youtube } from './components/icons/SocialIcons';
+import { Facebook, Instagram, WhatsApp, Youtube } from './components/icons/SocialIcons';
 
 const navItems = [
   { label: 'Home', page: 'home' },
@@ -38,6 +39,38 @@ const footerProductCategories = [
   'Rehabilitation Equipment',
   'Treatment Tables',
 ];
+
+function FloatingWhatsAppButton() {
+  const [showLabel, setShowLabel] = useState(true);
+
+  return (
+    <div className="floating-whatsapp-wrap">
+      {showLabel && (
+        <div className="floating-whatsapp-label">
+          <span>Contact us on WhatsApp</span>
+          <button
+            type="button"
+            className="floating-whatsapp-dismiss"
+            onClick={() => setShowLabel(false)}
+            aria-label="Hide WhatsApp message"
+            title="Hide message"
+          >
+            <X size={13} />
+          </button>
+        </div>
+      )}
+      <a
+        className="floating-whatsapp"
+        href={CONTACT.whatsappHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Chat with Shivshakti Healthcare Equipments on WhatsApp at ${CONTACT.phone}`}
+      >
+        <WhatsApp size={42} />
+      </a>
+    </div>
+  );
+}
 
 function getPage() {
   const value = window.location.hash.replace('#', '');
@@ -83,7 +116,9 @@ function Footer() {
         </div>
         <div>
           <h3>Connect With Us</h3>
-          <button className="whatsapp" onClick={() => navigate('contact')}>Chat on WhatsApp <ArrowRight size={15} /></button>
+          <a className="whatsapp" href={CONTACT.whatsappHref} target="_blank" rel="noopener noreferrer">
+            <WhatsApp size={17} /> Chat on WhatsApp <ArrowRight size={15} />
+          </a>
           <div className="socials">
             <a href="https://www.facebook.com/share/1HJxtcBHZW/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook size={17} /></a>
             <a href="#contact" aria-label="YouTube"><Youtube size={17} /></a>
@@ -125,13 +160,14 @@ function App() {
   // For non-home pages, still show the new HeroSection header (without the carousel)
   // We render HeroSection only on home; other pages get a standalone header wrapper
   if (page === 'home') {
-    return <><main>{content}</main><Footer /></>;
+    return <><main>{content}</main><Footer /><FloatingWhatsAppButton /></>;
   }
   return (
     <>
       <HeroSection activePage={page} onNavigate={onNavigate} hideCarousel />
       <main>{content}</main>
       <Footer />
+      <FloatingWhatsAppButton />
     </>
   );
 }
