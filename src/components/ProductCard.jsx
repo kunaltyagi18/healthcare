@@ -22,7 +22,15 @@ export default function ProductCard({ product, onNavigate, onOpen }) {
       aria-label={`View details for ${product.title}`}
     >
       <div className="product-card-media">
-        <img src={product.image} alt={product.title} loading="lazy" />
+        <img
+          src={product.image}
+          alt={product.title}
+          loading="lazy"
+          draggable="false"
+          onCopy={(event) => event.preventDefault()}
+          onContextMenu={(event) => event.preventDefault()}
+          onDragStart={(event) => event.preventDefault()}
+        />
         <span className="product-card-category">{product.category}</span>
         <span className="product-card-number">#{product.serialNumber}</span>
       </div>

@@ -259,6 +259,7 @@ function SlideContent({ slide, isActive }) {
       <div
         className="hc-slide-bg"
         style={{ backgroundImage: `url(${slide.image})` }}
+        data-image-protected="true"
         aria-hidden="true"
       />
       {/* Dark gradient overlay on image side */}

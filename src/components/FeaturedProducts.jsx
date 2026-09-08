@@ -60,7 +60,15 @@ export default function FeaturedProducts({ onNavigate }) {
                 aria-label={`View ${product.title} on the products page`}
               >
                 <div className="featured-product-image">
-                  <img src={product.image} alt="" loading="lazy" />
+                  <img
+                    src={product.image}
+                    alt=""
+                    loading="lazy"
+                    draggable="false"
+                    onCopy={(event) => event.preventDefault()}
+                    onContextMenu={(event) => event.preventDefault()}
+                    onDragStart={(event) => event.preventDefault()}
+                  />
                 </div>
                 <span className="featured-product-name">{product.title}</span>
               </button>

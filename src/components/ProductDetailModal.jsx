@@ -1,8 +1,11 @@
 import { useEffect } from 'react';
 import { ArrowRight, X } from 'lucide-react';
 import { formatCurrency, getDescriptionLines } from '../utils/productFormatting';
+import useAntiCopy from '../utils/useAntiCopy';
 
 export default function ProductDetailModal({ product, onClose, onNavigate }) {
+  const antiCopyRef = useAntiCopy();
+
   useEffect(() => {
     function handleKeyDown(event) {
       if (event.key === 'Escape') onClose();
@@ -26,6 +29,7 @@ export default function ProductDetailModal({ product, onClose, onNavigate }) {
     <div className="product-detail-backdrop" onMouseDown={onClose} role="presentation">
       <div
         className="product-detail-modal"
+        ref={antiCopyRef}
         role="dialog"
         aria-modal="true"
         aria-labelledby="product-detail-title"
@@ -37,7 +41,14 @@ export default function ProductDetailModal({ product, onClose, onNavigate }) {
 
         <div className="product-detail-grid">
           <div className="product-detail-media">
-            <img src={product.image} alt={product.title} />
+            <img
+              src={product.image}
+              alt={product.title}
+              draggable="false"
+              onCopy={(event) => event.preventDefault()}
+              onContextMenu={(event) => event.preventDefault()}
+              onDragStart={(event) => event.preventDefault()}
+            />
             <span>{product.category}</span>
           </div>
 

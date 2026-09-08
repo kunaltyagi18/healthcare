@@ -20,6 +20,7 @@ import ContactPage from './pages/ContactPage';
 // Data & Icons
 import { CONTACT } from './data/siteData';
 import { Facebook, Instagram, WhatsApp, Youtube } from './components/icons/SocialIcons';
+import useImageProtection from './utils/useImageProtection';
 
 const navItems = [
   { label: 'Home', page: 'home' },
@@ -137,6 +138,7 @@ function Footer() {
 }
 
 function App() {
+  useImageProtection();
   const [page, setPage] = useState(getPage);
   useEffect(() => {
     const handleHash = () => setPage(getPage());
