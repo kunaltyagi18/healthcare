@@ -425,17 +425,12 @@ export function BottomBanner() {
       <div className="qc-contact-strip">
         <div className="qc-contact-item">
           <Phone size={16} />
-          <span>+91 96540 30003</span>
+          <span>+91 89201 99593</span>
         </div>
         <div className="qc-contact-divider" />
         <div className="qc-contact-item">
           <Mail size={16} />
-          <span>info@shivshaktihealthcare.in</span>
-        </div>
-        <div className="qc-contact-divider" />
-        <div className="qc-contact-item">
-          <Globe size={16} />
-          <span>www.shivshaktihealthcare.in</span>
+          <span>shivshaktihealthcareequipments@gmail.com</span>
         </div>
         <div className="qc-contact-divider" />
         <div className="qc-contact-item">

@@ -15,6 +15,8 @@
   --green: #208b49;
   --green-light: #e8f5ed;
   --logo-blue: #003bb3;
+  --button-blue: #003bb3;
+  --button-blue-hover: #002d8f;
   --logo-teal: #1a8680;
   --ink: #173451;
   --muted: #64778b;
@@ -584,7 +586,7 @@ img {
   gap: 6px;
   margin-left: 16px;
   padding: 8px 18px;
-  background: linear-gradient(135deg, var(--logo-blue) 0%, #01247e 100%);
+  background: var(--button-blue);
   color: #fff;
   border: 0;
   border-radius: 20px;
@@ -599,7 +601,7 @@ img {
 }
 
 .hc-header-cta:hover {
-  background: linear-gradient(135deg, #0b4dcc 0%, #001b66 100%);
+  background: var(--button-blue-hover);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0, 59, 179, 0.38);
 }
@@ -837,9 +839,9 @@ img {
 }
 
 .hc-btn-outline:hover {
-  background: var(--navy);
+  background: var(--button-blue);
   color: #fff !important;
-  border-color: var(--navy) !important;
+  border-color: var(--button-blue) !important;
 }
 
 /* Prev / Next arrows */
@@ -980,6 +982,12 @@ img {
 }
 
 @media (max-width: 768px) {
+  .hc-topbar-inner {
+    height: 42px;
+    padding: 0 16px;
+    gap: 12px;
+  }
+
   .hc-topbar-loc {
     display: none;
   }
@@ -990,7 +998,7 @@ img {
 
   .hc-nav {
     position: fixed;
-    top: 108px;
+    top: 146px;
     left: 0;
     right: 0;
     background: #fff;
@@ -1058,25 +1066,53 @@ img {
     width: calc(100% - 32px);
   }
 
-  .hc-topbar-right {
-    display: none;
-  }
-
   .hc-topbar-left {
-    gap: 12px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: nowrap;
     justify-content: center;
     width: 100%;
     text-align: center;
-    padding: 4px 0;
+    padding: 0;
   }
 
   .hc-topbar-inner {
-    padding: 4px 16px;
+    flex-direction: column;
+    gap: 7px;
+    padding: 7px 12px;
     height: auto;
-    min-height: 36px;
-    flex-wrap: wrap;
+    min-height: 78px;
+    flex-wrap: nowrap;
     justify-content: center;
+  }
+
+  .hc-topbar-item {
+    max-width: 100%;
+    gap: 6px;
+    font-size: 11px;
+    line-height: 1.25;
+  }
+
+  .hc-topbar-item span {
+    max-width: calc(100vw - 40px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .hc-topbar-right {
+    display: flex;
+    gap: 7px;
+  }
+
+  .hc-social-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .hc-nav {
+    top: 178px;
   }
 
   .hc-header-inner {
@@ -1273,22 +1309,22 @@ img {
 }
 
 .button.primary {
-  background: var(--navy);
+  background: var(--button-blue);
 }
 
 .button.primary:hover {
-  background: var(--green);
+  background: var(--button-blue-hover);
 }
 
 .button.outline {
-  color: var(--navy);
+  color: var(--button-blue);
   background: white;
   border-color: #abc1d1;
 }
 
 .button.outline:hover {
-  border-color: var(--green);
-  color: var(--green);
+  border-color: var(--button-blue);
+  color: var(--button-blue);
 }
 
 .button.green {
@@ -3160,7 +3196,7 @@ img {
   font-weight: 800;
   letter-spacing: 0.02em;
   color: #fff;
-  background: linear-gradient(135deg, var(--logo-blue) 0%, #01247e 100%);
+  background: var(--button-blue);
   box-shadow: 0 10px 20px rgba(0, 59, 179, 0.28);
   border: none;
   margin-top: 10px;
@@ -3173,7 +3209,7 @@ img {
 }
 
 .contact-form .submit-enquiry-btn:hover {
-  background: linear-gradient(135deg, #0b4dcc 0%, #001b66 100%);
+  background: var(--button-blue-hover);
   transform: translateY(-3px);
   box-shadow: 0 15px 30px rgba(0, 59, 179, 0.38);
 }
@@ -4182,6 +4218,13 @@ img {
   flex-direction: column;
   justify-content: center;
   gap: 24px;
+}
+
+@media (min-width: 901px) {
+  .qc-hero-left {
+    justify-content: flex-start;
+    padding-top: 36px;
+  }
 }
 
 /* Logo block */
@@ -5667,7 +5710,7 @@ img {
   align-items: center;
   gap: 10px;
   padding: 14px 28px;
-  background: var(--navy);
+  background: var(--button-blue);
   color: #fff;
   font-size: 15px;
   font-weight: 700;
@@ -5678,7 +5721,7 @@ img {
 }
 
 .view-all-btn:hover {
-  background: #1c5fa8;
+  background: var(--button-blue-hover);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(15, 42, 82, 0.25);
 }
@@ -6478,7 +6521,7 @@ img {
   gap: 7px;
   border: 0;
   border-radius: 10px;
-  background: #1a5fa8;
+  background: var(--button-blue);
   color: #fff;
   cursor: pointer;
   font-size: 12px;
@@ -6493,7 +6536,7 @@ img {
 
 .product-card-enquire:hover,
 .product-retry-button:hover {
-  background: #124378;
+  background: var(--button-blue-hover);
   transform: translateY(-1px);
 }
 
@@ -6581,13 +6624,13 @@ img {
 
 .product-page-button:hover:not(:disabled) {
   transform: translateY(-2px);
-  border-color: #1a5fa8;
-  color: #1a5fa8;
+  border-color: var(--button-blue);
+  color: var(--button-blue);
 }
 
 .product-page-button.is-active {
-  border-color: #1a5fa8;
-  background: #1a5fa8;
+  border-color: var(--button-blue);
+  background: var(--button-blue);
   color: #fff;
 }
 
@@ -6881,7 +6924,7 @@ img {
 
 .featured-products-heading h2 {
   margin: 7px 0 8px;
-  color: #12385d;
+  color: var(--navy);
   font-size: clamp(28px, 3vw, 38px);
   letter-spacing: -0.03em;
 }
@@ -6895,7 +6938,7 @@ img {
   border: 1px solid #cbdced;
   border-radius: 11px;
   background: #fff;
-  color: #1a5fa8;
+  color: var(--button-blue);
   cursor: pointer;
   font-size: 13px;
   font-weight: 800;
@@ -6904,7 +6947,7 @@ img {
 
 .featured-products-view-all:hover {
   transform: translateY(-2px);
-  border-color: #1a5fa8;
+  border-color: var(--button-blue);
   background: #eef5fd;
 }
 
@@ -7236,7 +7279,7 @@ img {
   padding: 13px 18px;
   border: 0;
   border-radius: 11px;
-  background: #1a5fa8;
+  background: var(--button-blue);
   color: #fff;
   cursor: pointer;
   font-size: 13px;
@@ -7245,7 +7288,7 @@ img {
 }
 
 .product-detail-enquire:hover {
-  background: #124378;
+  background: var(--button-blue-hover);
   transform: translateY(-1px);
 }
 
@@ -7280,4 +7323,111 @@ img {
   .product-detail-specifications ul {
     overflow: visible;
   }
+}
+
+/* Keep non-hero blue text aligned with the Shivshakti logo. */
+:root {
+  --blue: var(--logo-blue);
+}
+
+.section-heading h2,
+.brand,
+.main-nav button:hover,
+.main-nav button.active,
+.menu-button,
+.hero h1,
+.hero h1 em,
+.button.small-light,
+.mini-points b,
+.solution-card b,
+.quote-mark,
+.catalogue-text h2,
+.page-intro h1,
+.quality-detail h2,
+.process-list span,
+.catalogue-page-card h2,
+.contact-info h2,
+.contact-line b,
+.quality-industries-block .section-heading h2,
+.quality-strip-item h4,
+.industry-strip-item h4,
+.certs-overview-title,
+.sol-h-navy,
+.sol-hf-title,
+.sol-ind-heading,
+.sol-industry-item > span,
+.au-s1-heading,
+.au-s1-feat strong,
+.au-wm-brand,
+.au-s1-watermark strong,
+.au-s2-heading,
+.au-s3-header h2,
+.au-s3-item strong,
+.qc-logo-block strong,
+.qc-hero-p.bold,
+.qc-img-overlay p,
+.qc-div-heading,
+.qc-view-cert,
+.qc-cert-title,
+.qc-cert-sub,
+.qc-commit-item > strong,
+.qc-contact-item,
+.cat-heading,
+.text-navy,
+.cat-main-title,
+.cat-desc strong,
+.cat-cb-label,
+.cat-need-text strong,
+.why-connect-title,
+.why-c-text strong,
+.cat-bs-left p,
+.cat-bs-right,
+.blue,
+.products-page-header h1,
+.product-search-field input,
+.product-select-value,
+.product-select-option,
+.products-toolbar strong,
+.products-message h2,
+.product-page-button:not(.is-active),
+.product-card-title,
+.product-card-price,
+.featured-products-heading h2,
+.featured-product-name,
+.product-detail-content h2,
+.product-detail-specifications h3 {
+  color: var(--logo-blue);
+}
+
+.hc-menu-toggle,
+.hc-arrow,
+.products-clear-filters {
+  color: var(--logo-blue);
+}
+
+/* Keep non-hero green text aligned with the hero highlight green. */
+.floating-whatsapp-label,
+.floating-whatsapp-dismiss,
+.au-s4-content p,
+.qc-logo-block span,
+.qc-tr-sub,
+.clickable-card:hover .qc-view-cert,
+.qc-text-green,
+.qc-commit-item:hover > strong,
+.qc-contact-item:hover,
+.qc-bottom-g-item:hover > span,
+.text-green,
+.cat-cb-number,
+.product-select-field.is-active,
+.product-select-option:hover,
+.product-select-option.is-selected,
+.product-filters-clear,
+.product-card-number,
+.product-card-subcategory,
+.product-card-gst,
+.product-detail-subcategory,
+.product-detail-price-row small,
+.product-detail-number,
+.product-detail-specifications li::marker {
+  color: var(--green);
 }

@@ -19,7 +19,7 @@ export const solutionCards = [
   {
     id: 'physio',
     theme: 'blue',
-    accent: '#1a5fa8',
+    accent: '#003bb3',
     accentLight: '#eef4fc',
     title: 'Physiotherapy Clinic Setup',
     img: '/sol_physio.jpg',

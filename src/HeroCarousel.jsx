@@ -78,7 +78,7 @@ const slides = [
       { icon: Target, label: 'Faster', label2: 'Recovery' },
       { icon: Users, label: 'Trusted by', label2: 'Professionals' },
     ],
-    primaryBtn: { text: 'EXPLORE PHYSIOTHERAPY RANGE', color: '#1c5fa8' },
+    primaryBtn: { text: 'EXPLORE PHYSIOTHERAPY RANGE', color: '#003bb3' },
     outlineBtn: { text: 'REQUEST A QUOTE' },
   },
   {
@@ -122,7 +122,7 @@ const slides = [
       { icon: Target, label: 'Builds Strength', label2: '& Coordination' },
       { icon: Users, label: 'Encourages', label2: 'Independence' },
     ],
-    primaryBtn: { text: 'EXPLORE OT RANGE', color: '#1a5fa8' },
+    primaryBtn: { text: 'EXPLORE OT RANGE', color: '#003bb3' },
     outlineBtn: { text: 'REQUEST A QUOTE' },
   },
   {
@@ -142,7 +142,7 @@ const slides = [
       { icon: CheckCircle, label: 'Safe' },
       { icon: CheckCircle, label: 'Clinically Proven' },
     ],
-    primaryBtn: { text: 'VIEW ALL PRODUCTS', color: '#1c5fa8' },
+    primaryBtn: { text: 'VIEW ALL PRODUCTS', color: '#003bb3' },
     outlineBtn: { text: 'REQUEST A QUOTE' },
   },
 ];
@@ -344,8 +344,8 @@ function SlideContent({ slide, isActive }) {
             <button
               className="hc-btn-outline"
               style={{
-                borderColor: slide.outlineBtn?.outlineColor || (isDark ? 'rgba(255,255,255,0.4)' : '#1a5fa8'),
-                color: isDark ? '#fff' : '#1a5fa8',
+                borderColor: slide.outlineBtn?.outlineColor || (isDark ? 'rgba(255,255,255,0.4)' : '#003bb3'),
+                color: isDark ? '#fff' : '#003bb3',
               }}
             >
               <WhatsApp size={15} />

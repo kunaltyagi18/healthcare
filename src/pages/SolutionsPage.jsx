@@ -10,7 +10,7 @@ import { solutionCards } from '../data/solutionCards';
 const heroFeatures = [
   {
     icon: Settings,
-    color: '#1a5fa8',
+    color: '#003bb3',
     title: 'Smart Planning',
     desc: 'Designed around your goals',
   },
