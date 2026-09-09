@@ -122,7 +122,7 @@ function Footer() {
           </a>
           <div className="socials">
             <a href="https://www.facebook.com/share/1HJxtcBHZW/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook size={17} /></a>
-            <a href="#contact" aria-label="YouTube"><Youtube size={17} /></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><Youtube size={17} /></a>
             <a href="https://www.instagram.com/shivshakti_healthcare_eqs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={17} /></a>
           </div>
         </div>

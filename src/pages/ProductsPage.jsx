@@ -119,7 +119,6 @@ export default function ProductsPage({ onNavigate }) {
     };
   }, [category, page, query, retryToken, subCategory]);
 
-  const hasActiveFilters = Boolean(query.trim() || category || subCategory);
   const firstProduct = pagination.total === 0 ? 0 : ((pagination.page - 1) * pagination.limit) + 1;
   const lastProduct = Math.min(pagination.page * pagination.limit, pagination.total);
 
@@ -145,9 +144,15 @@ export default function ProductsPage({ onNavigate }) {
             categories={filters.categories}
             subCategories={filters.subCategories}
             onQueryChange={(value) => { setQuery(value); setPage(1); }}
-            onCategoryChange={(value) => { setCategory(value); setSubCategory(''); setPage(1); }}
+            onCategoryChange={(value) => {
+              setCategory(value);
+              setSubCategory('');
+              setFilters((currentFilters) => ({ ...currentFilters, subCategories: [] }));
+              setPage(1);
+            }}
             onSubCategoryChange={(value) => { setSubCategory(value); setPage(1); }}
-            onClear={() => { setQuery(''); setPage(1); }}
+            onClear={clearFilters}
+            onClearSearch={() => { setQuery(''); setPage(1); }}
           />
         </div>
       </section>
@@ -160,9 +165,6 @@ export default function ProductsPage({ onNavigate }) {
                 ? <>Showing <strong>{firstProduct}–{lastProduct}</strong> of <strong>{pagination.total}</strong> products</>
                 : 'No products match your search'}
             </p>
-            {hasActiveFilters && (
-              <button className="products-clear-filters" onClick={clearFilters}>Clear filters</button>
-            )}
           </div>
 
           {error ? (

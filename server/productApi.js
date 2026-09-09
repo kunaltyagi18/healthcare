@@ -8,7 +8,12 @@ const products = JSON.parse(fs.readFileSync(productsPath, 'utf8'));
 
 const uniqueSorted = (values) => [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b));
 const categories = uniqueSorted(products.map((product) => product.category));
-const subCategories = uniqueSorted(products.map((product) => product.subCategory));
+
+function getSubCategories(category) {
+  return uniqueSorted(products
+    .filter((product) => !category || product.category === category)
+    .map((product) => product.subCategory));
+}
 
 function normalise(value) {
   return String(value ?? '').trim().toLocaleLowerCase();
@@ -59,7 +64,7 @@ export function getProductsPage(searchParams) {
     },
     filters: {
       categories,
-      subCategories,
+      subCategories: category ? getSubCategories(category) : [],
     },
   };
 }

@@ -35,13 +35,6 @@ const Instagram = ({ size = 16 }) => (
     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
   </svg>
 );
-const Linkedin = ({ size = 16 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    <rect width="4" height="12" x="2" y="9" />
-    <circle cx="4" cy="4" r="2" />
-  </svg>
-);
 const Youtube = ({ size = 16 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M2.5 7.1C2.5 7.1 2 9 2 12c0 3 .5 4.9.5 4.9C3 18.3 4.3 19.6 5.8 19.8 8.1 20 12 20 12 20s3.9 0 6.2-.2c1.5-.2 2.8-1.5 3.3-2.9C22 16.9 22 15 22 12c0-3-.5-4.9-.5-4.9C21 5.7 19.7 4.4 18.2 4.2 15.9 4 12 4 12 4s-3.9 0-6.2.2C4.3 4.4 3 5.7 2.5 7.1z" />
@@ -161,13 +154,13 @@ function TopBar() {
     <div className="hc-topbar">
       <div className="hc-topbar-inner">
         <div className="hc-topbar-left">
-          <a href="tel:+919654030003" className="hc-topbar-item">
+          <a href="tel:+918920199593" className="hc-topbar-item">
             <Phone size={12} />
-            <span>+91 96540 30003</span>
+            <span>+91 89201 99593</span>
           </a>
-          <a href="mailto:info@shivshaktihealthcare.in" className="hc-topbar-item">
+          <a href="mailto:shivshaktihealthcareequipments@gmail.com" className="hc-topbar-item">
             <Mail size={12} />
-            <span>info@shivshaktihealthcare.in</span>
+            <span>shivshaktihealthcareequipments@gmail.com</span>
           </a>
           <span className="hc-topbar-item hc-topbar-loc">
             <MapPin size={12} />
@@ -175,10 +168,9 @@ function TopBar() {
           </span>
         </div>
         <div className="hc-topbar-right">
-          <a href="#facebook" aria-label="Facebook" className="hc-social-btn"><Facebook size={13} /></a>
-          <a href="#instagram" aria-label="Instagram" className="hc-social-btn"><Instagram size={13} /></a>
-          <a href="#linkedin" aria-label="LinkedIn" className="hc-social-btn"><Linkedin size={13} /></a>
-          <a href="#youtube" aria-label="YouTube" className="hc-social-btn"><Youtube size={13} /></a>
+          <a href="https://www.facebook.com/share/1HJxtcBHZW/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hc-social-btn"><Facebook size={13} /></a>
+          <a href="https://www.instagram.com/shivshakti_healthcare_eqs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hc-social-btn"><Instagram size={13} /></a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hc-social-btn"><Youtube size={13} /></a>
         </div>
       </div>
     </div>
