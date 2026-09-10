@@ -7207,7 +7207,7 @@ img {
 
 .product-detail-media span {
   position: absolute;
-  top: 20px;
+  top: 42px;
   left: 104px;
   z-index: 1;
   max-width: calc(100% - 124px);
