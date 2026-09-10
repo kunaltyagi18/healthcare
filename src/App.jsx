@@ -74,13 +74,18 @@ function FloatingWhatsAppButton() {
 }
 
 function getPage() {
-  const value = window.location.hash.replace('#', '');
+  const hashValue = window.location.hash.replace('#', '');
+  if (navItems.some((item) => item.page === hashValue)) return hashValue;
+
+  const value = window.location.pathname.replace(/^\/+|\/+$/g, '');
   return navItems.some((item) => item.page === value) ? value : 'home';
 }
 
 function navigate(page) {
   if (page === 'home') {
-    window.history.pushState("", document.title, window.location.pathname + window.location.search);
+    const currentPath = window.location.pathname.replace(/^\/+|\/+$/g, '');
+    const nextPath = navItems.some((item) => item.page === currentPath) ? '/' : window.location.pathname;
+    window.history.pushState('', document.title, nextPath + window.location.search);
     window.dispatchEvent(new Event('hashchange'));
   } else {
     window.location.hash = page;
@@ -107,7 +112,7 @@ function Footer() {
         </div>
         <div>
           <h3>Quick Links</h3>
-          {navItems.slice(0, 6).map((item) => <button key={item.page} onClick={() => navigate(item.page)}>{item.label}</button>)}
+          {navItems.map((item) => <button key={item.page} onClick={() => navigate(item.page)}>{item.label}</button>)}
         </div>
         <div>
           <h3>Product Catalogue</h3>
@@ -143,7 +148,11 @@ function App() {
   useEffect(() => {
     const handleHash = () => setPage(getPage());
     window.addEventListener('hashchange', handleHash);
-    return () => window.removeEventListener('hashchange', handleHash);
+    window.addEventListener('popstate', handleHash);
+    return () => {
+      window.removeEventListener('hashchange', handleHash);
+      window.removeEventListener('popstate', handleHash);
+    };
   }, []);
 
   function onNavigate(p) {

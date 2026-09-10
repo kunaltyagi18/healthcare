@@ -1,8 +1,10 @@
+﻿import usePageTitle from '../utils/usePageTitle';
 import { BookOpen, Phone, ShieldCheck } from 'lucide-react';
 import { catalogueServing, catalogueWhyConnect, CONTACT, IMAGES } from '../data/siteData';
 import { WhatsApp } from '../components/icons/SocialIcons';
 
 export default function CataloguePage() {
+  usePageTitle('Product Catalogue');
   return (
     <div className="catalogue-wrapper">
       <div className="cat-card-container new-cat-card">

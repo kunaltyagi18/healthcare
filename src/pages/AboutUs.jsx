@@ -1,5 +1,4 @@
 
-
 import {
   Activity,
   BadgeCheck,
@@ -12,8 +11,10 @@ import {
   Target,
   Users,
 } from 'lucide-react';
+import usePageTitle from '../utils/usePageTitle';
 
 export function AboutUs() {
+  usePageTitle('About Us');
   return (
     <div className="au-page">
 

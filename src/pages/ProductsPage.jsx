@@ -4,6 +4,7 @@ import { fetchProducts } from '../api/products';
 import ProductCard from '../components/ProductCard';
 import ProductDetailModal from '../components/ProductDetailModal';
 import ProductFilters from '../components/ProductFilters';
+import usePageTitle from '../utils/usePageTitle';
 
 const emptyPagination = {
   hasNextPage: false,
@@ -71,6 +72,7 @@ function ProductLoadingState() {
 }
 
 export default function ProductsPage({ onNavigate }) {
+  usePageTitle('Products');
   const [products, setProducts] = useState([]);
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('');
@@ -206,6 +208,7 @@ export default function ProductsPage({ onNavigate }) {
 
       {selectedProduct && (
         <ProductDetailModal
+          key={selectedProduct.id}
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
           onNavigate={(destination) => {

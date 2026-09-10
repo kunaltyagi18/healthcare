@@ -1,3 +1,4 @@
+﻿import usePageTitle from '../utils/usePageTitle';
 import {
   Award,
   Eye,
@@ -246,7 +247,6 @@ export function CertBadge({ style }) {
   }
   return null;
 }
-
 export function CertificationGrid({ data }) {
   const renderCard = (c) => {
     const CardElement = c.link ? 'a' : 'div';
@@ -456,6 +456,7 @@ function SectionDivider({ text }) {
 
 /* ── MAIN PAGE ── */
 export default function QualityPage() {
+  usePageTitle('Quality & Certifications');
   return (
     <div className="qc-page">
       {/* Section 1 */}

@@ -1,3 +1,4 @@
+﻿import usePageTitle from '../utils/usePageTitle';
 import {
   ArrowRight, Lightbulb, Settings, ShieldCheck, Target,
 } from 'lucide-react';
@@ -50,7 +51,6 @@ function HeroFeature({ icon: Icon, color, title, desc }) {
     </div>
   );
 }
-
 export function SolutionCard({ card, onNavigate }) {
   return (
     <div className="sol-card" style={{ '--card-accent': card.accent, '--card-accent-light': card.accentLight }}>
@@ -105,6 +105,7 @@ function IndustryItem({ icon: Icon, label }) {
    MAIN PAGE
 ───────────────────────────────────────── */
 export default function SolutionsPage({ onNavigate }) {
+  usePageTitle('Healthcare Facility & Therapy Solutions');
   return (
     <div className="sol-page">
 

@@ -1,10 +1,15 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { ArrowRight, X } from 'lucide-react';
 import { formatCurrency, getDescriptionLines } from '../utils/productFormatting';
 import useAntiCopy from '../utils/useAntiCopy';
 
 export default function ProductDetailModal({ product, onClose, onNavigate }) {
   const antiCopyRef = useAntiCopy();
+  const productImages = [...new Set([
+    product.image,
+    ...(Array.isArray(product.images) ? product.images : []),
+  ].filter(Boolean))];
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   useEffect(() => {
     function handleKeyDown(event) {
@@ -41,14 +46,33 @@ export default function ProductDetailModal({ product, onClose, onNavigate }) {
 
         <div className="product-detail-grid">
           <div className="product-detail-media">
-            <img
-              src={product.image}
+            <div className="product-detail-image-stage">
+              <img
+              className="product-detail-main-image"
+              src={productImages[activeImageIndex] || product.image}
               alt={product.title}
               draggable="false"
               onCopy={(event) => event.preventDefault()}
               onContextMenu={(event) => event.preventDefault()}
               onDragStart={(event) => event.preventDefault()}
-            />
+              />
+            </div>
+            {productImages.length > 1 && (
+              <div className="product-detail-gallery" aria-label="Product images">
+                {productImages.map((image, index) => (
+                  <button
+                    className={`product-detail-thumbnail${index === activeImageIndex ? ' is-active' : ''}`}
+                    type="button"
+                    key={image}
+                    onClick={() => setActiveImageIndex(index)}
+                    aria-label={`View product image ${index + 1}`}
+                    aria-pressed={index === activeImageIndex}
+                  >
+                    <img src={image} alt="" draggable="false" />
+                  </button>
+                ))}
+              </div>
+            )}
             <span>{product.category}</span>
           </div>
 

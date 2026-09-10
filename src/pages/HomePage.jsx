@@ -5,7 +5,9 @@ import { HeroSection } from '../HeroCarousel';
 import { solutionCards } from '../data/solutionCards';
 import { SolutionCard } from './SolutionsPage';
 import FeaturedProducts from '../components/FeaturedProducts';
+import usePageTitle from '../utils/usePageTitle';
 export default function HomePage({ page, onNavigate }) {
+  usePageTitle('Physiotherapy & Rehabilitation Equipment Manufacturer');
   return (
     <>
       <HeroSection activePage={page} onNavigate={onNavigate} />

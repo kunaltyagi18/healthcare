@@ -1,9 +1,11 @@
+﻿import usePageTitle from '../utils/usePageTitle';
 import { useState } from 'react';
 import { ArrowRight, Phone, Mail, MapPin } from 'lucide-react';
 import { PageIntro } from '../components/Shared';
 import { CONTACT } from '../data/siteData';
 
 export default function ContactPage() {
+  usePageTitle('Contact Us');
   const [sent, setSent] = useState(false);
   
   return (
