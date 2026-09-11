@@ -324,13 +324,29 @@ function CertificatePreview({ certificate, onClose }) {
         const canvas = canvasRef.current;
         const containerWidth = canvas.parentElement?.clientWidth || 960;
         const baseViewport = page.getViewport({ scale: 1 });
-        const scale = Math.min(2, Math.max(0.5, (containerWidth - 36) / baseViewport.width));
-        const viewport = page.getViewport({ scale });
+        
+        // Ensure PDF is large enough to read on mobile (allows scrolling)
+        const isMobile = window.innerWidth <= 768;
+        const minScale = isMobile ? 1.0 : 0.5;
+        const cssScale = Math.min(2, Math.max(minScale, (containerWidth - 36) / baseViewport.width));
+        
+        // Fix blurriness on Retina/High-DPI displays
+        const pixelRatio = window.devicePixelRatio || 1;
+        const renderScale = cssScale * pixelRatio;
+        
+        const renderViewport = page.getViewport({ scale: renderScale });
+        const cssViewport = page.getViewport({ scale: cssScale });
         const context = canvas.getContext('2d', { alpha: false });
 
-        canvas.width = Math.ceil(viewport.width);
-        canvas.height = Math.ceil(viewport.height);
-        await page.render({ canvasContext: context, viewport }).promise;
+        // Set actual canvas resolution (for sharpness)
+        canvas.width = Math.ceil(renderViewport.width);
+        canvas.height = Math.ceil(renderViewport.height);
+        
+        // Set CSS display size (for layout)
+        canvas.style.width = `${Math.ceil(cssViewport.width)}px`;
+        canvas.style.height = `${Math.ceil(cssViewport.height)}px`;
+        
+        await page.render({ canvasContext: context, viewport: renderViewport }).promise;
       } catch (renderError) {
         if (!cancelled) {
           setError(renderError?.message || 'Unable to render this certificate page.');
