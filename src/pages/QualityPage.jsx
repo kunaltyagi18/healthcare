@@ -368,6 +368,7 @@ function CertificatePreview({ certificate, onClose }) {
           <canvas
             ref={canvasRef}
             className="qc-cert-preview-canvas"
+            style={{ display: status === 'ready' ? 'block' : 'none' }}
             aria-label={`${certificate.title} page ${pageNumber}`}
             draggable="false"
           />
