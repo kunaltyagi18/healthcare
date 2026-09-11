@@ -1,4 +1,8 @@
-﻿import usePageTitle from '../utils/usePageTitle';
+import usePageTitle from '../utils/usePageTitle';
+import useAntiCopy from '../utils/useAntiCopy';
+import { useEffect, useRef, useState } from 'react';
+import * as pdfjsLib from 'pdfjs-dist';
+import pdfWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
 import {
   Award,
   Eye,
@@ -15,7 +19,10 @@ import {
   Settings,
   ShieldCheck,
   Users,
+  X,
 } from 'lucide-react';
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
 
 /* ── DATA ── */
 const certs = [
@@ -247,11 +254,157 @@ export function CertBadge({ style }) {
   }
   return null;
 }
+function CertificatePreview({ certificate, onClose }) {
+  const canvasRef = useRef(null);
+  const pdfRef = useRef(null);
+  const loadingTaskRef = useRef(null);
+  const [pageNumber, setPageNumber] = useState(1);
+  const [pageCount, setPageCount] = useState(0);
+  const [status, setStatus] = useState('loading');
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') onClose();
+    };
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [onClose]);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadCertificate() {
+      try {
+        const task = pdfjsLib.getDocument({ url: certificate.link });
+        loadingTaskRef.current = task;
+        const pdf = await task.promise;
+        if (cancelled) return;
+        pdfRef.current = pdf;
+        setPageCount(pdf.numPages);
+        setStatus('ready');
+      } catch (loadError) {
+        if (!cancelled) {
+          setError(loadError?.message || 'Unable to preview this certificate.');
+          setStatus('error');
+        }
+      }
+    }
+
+    loadCertificate();
+
+    return () => {
+      cancelled = true;
+      pdfRef.current = null;
+      if (loadingTaskRef.current) {
+        loadingTaskRef.current.destroy();
+        loadingTaskRef.current = null;
+      }
+    };
+  }, [certificate.link]);
+
+  useEffect(() => {
+    if (status !== 'ready' || !pdfRef.current || !canvasRef.current) return undefined;
+
+    let cancelled = false;
+
+    async function renderPage() {
+      try {
+        const page = await pdfRef.current.getPage(pageNumber);
+        if (cancelled) return;
+
+        const canvas = canvasRef.current;
+        const containerWidth = canvas.parentElement?.clientWidth || 960;
+        const baseViewport = page.getViewport({ scale: 1 });
+        const scale = Math.min(2, Math.max(0.5, (containerWidth - 36) / baseViewport.width));
+        const viewport = page.getViewport({ scale });
+        const context = canvas.getContext('2d', { alpha: false });
+
+        canvas.width = Math.ceil(viewport.width);
+        canvas.height = Math.ceil(viewport.height);
+        await page.render({ canvasContext: context, viewport }).promise;
+      } catch (renderError) {
+        if (!cancelled) {
+          setError(renderError?.message || 'Unable to render this certificate page.');
+          setStatus('error');
+        }
+      }
+    }
+
+    renderPage();
+    return () => {
+      cancelled = true;
+    };
+  }, [pageNumber, status]);
+
+  return (
+    <div className="qc-cert-preview-backdrop" onMouseDown={onClose} role="presentation">
+      <div
+        className="qc-cert-preview"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="qc-cert-preview-title"
+        onMouseDown={(event) => event.stopPropagation()}
+      >
+        <div className="qc-cert-preview-header">
+          <div>
+            <span className="qc-cert-preview-kicker">Certificate Preview</span>
+            <h2 id="qc-cert-preview-title">{certificate.title}</h2>
+          </div>
+          <button type="button" className="qc-cert-preview-close" onClick={onClose} aria-label="Close certificate preview">
+            <X size={20} />
+          </button>
+        </div>
+        <div className="qc-cert-preview-document" onContextMenu={(event) => event.preventDefault()}>
+          {status === 'loading' && <p className="qc-cert-preview-status">Loading certificate preview…</p>}
+          {status === 'error' && <p className="qc-cert-preview-status qc-cert-preview-error">{error}</p>}
+          <canvas
+            ref={canvasRef}
+            className="qc-cert-preview-canvas"
+            aria-label={`${certificate.title} page ${pageNumber}`}
+            draggable="false"
+          />
+        </div>
+        <div className="qc-cert-preview-controls">
+          <button
+            type="button"
+            onClick={() => setPageNumber((current) => Math.max(1, current - 1))}
+            disabled={status !== 'ready' || pageNumber <= 1}
+          >
+            Previous
+          </button>
+          <span>{pageCount ? `Page ${pageNumber} of ${pageCount}` : 'Preparing preview'}</span>
+          <button
+            type="button"
+            onClick={() => setPageNumber((current) => Math.min(pageCount, current + 1))}
+            disabled={status !== 'ready' || pageNumber >= pageCount}
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function CertificationGrid({ data }) {
+  const [selectedCertificate, setSelectedCertificate] = useState(null);
+
   const renderCard = (c) => {
-    const CardElement = c.link ? 'a' : 'div';
+    const CardElement = c.link ? 'button' : 'div';
     const cardProps = c.link
-      ? { href: c.link, target: "_blank", rel: "noopener noreferrer", className: `qc-cert-card qc-card-${c.badgeStyle} clickable-card` }
+      ? {
+        type: 'button',
+        onClick: () => setSelectedCertificate(c),
+        className: `qc-cert-card qc-card-${c.badgeStyle} clickable-card`,
+      }
       : { className: `qc-cert-card qc-card-${c.badgeStyle}` };
     return (
       <CardElement key={c.num} {...cardProps}>
@@ -270,11 +423,20 @@ export function CertificationGrid({ data }) {
   };
 
   return (
-    <div className="qc-cert-wrapper">
-      <div className="qc-cert-grid">
-        {data.map(renderCard)}
+    <>
+      <div className="qc-cert-wrapper">
+        <div className="qc-cert-grid">
+          {data.map(renderCard)}
+        </div>
       </div>
-    </div>
+      {selectedCertificate && (
+        <CertificatePreview
+          key={selectedCertificate.num}
+          certificate={selectedCertificate}
+          onClose={() => setSelectedCertificate(null)}
+        />
+      )}
+    </>
   );
 }
 
@@ -456,9 +618,10 @@ function SectionDivider({ text }) {
 
 /* ── MAIN PAGE ── */
 export default function QualityPage() {
+  const antiCopyRef = useAntiCopy({ preventContextMenu: true });
   usePageTitle('Quality & Certifications');
   return (
-    <div className="qc-page">
+    <div className="qc-page" ref={antiCopyRef}>
       {/* Section 1 */}
       <CertificationsHero />
 

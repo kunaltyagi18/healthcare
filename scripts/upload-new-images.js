@@ -136,7 +136,10 @@ async function phaseExtract() {
   zipSources.forEach(z => console.log(`    ${path.basename(z)}`));
   console.log(`\n📁  Extracting into: raw-new-images/extracted/\n`);
 
-  const filenameMapping = {};
+  // Keep the previous archive-to-file mapping so re-running this phase is
+  // incremental. This prevents old ZIPs from being extracted and uploaded a
+  // second time when new ZIPs are added to the same folder.
+  const filenameMapping = readJson(PATHS.filenameMapping, {});
   const extractFailures = [];
   let totalExtracted = 0;
 
@@ -159,6 +162,11 @@ async function phaseExtract() {
       const entryName = entry.entryName;
       const lowerName = entryName.toLowerCase();
       if (!['.jpg','.jpeg','.png','.webp'].some(e => lowerName.endsWith(e))) continue;
+
+      const existingName = filenameMapping[entryName];
+      if (existingName && fs.existsSync(path.join(PATHS.extracted, existingName))) {
+        continue;
+      }
 
       let sanitized = sanitizeFilename(path.basename(entryName));
       if (usedNames.has(sanitized)) {
@@ -432,8 +440,13 @@ async function phaseUpload() {
     const entries = urlsByModel[key];
     if (entries?.length) {
       updatedCount++;
-      const urls = entries.map(e => e.secure_url);
-      return { ...p, image: urls[0], images: urls };
+      const uploadedUrls = entries.map(e => e.secure_url);
+      const existingUrls = [
+        ...(Array.isArray(p.images) ? p.images : []),
+        ...(p.image ? [p.image] : []),
+      ].filter(url => !String(url).startsWith('/products/'));
+      const urls = [...new Set([...uploadedUrls, ...existingUrls])];
+      return { ...p, image: uploadedUrls[0] || p.image || urls[0], images: urls };
     }
     noPhotoCount++;
     return p;

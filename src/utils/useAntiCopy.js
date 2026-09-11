@@ -32,11 +32,11 @@ function isInsideScope(target, scope) {
 }
 
 /**
- * Adds a scoped copy deterrent to a product detail surface. The hook returns
- * a ref so the rest of the site keeps normal selection, context menus and
- * browser inspection controls.
+ * Adds a scoped copy deterrent to a protected surface. The hook returns a ref
+ * so the rest of the site keeps normal selection and browser controls. Pages
+ * that expose protected document links can opt into context-menu blocking.
  */
-export default function useAntiCopy() {
+export default function useAntiCopy({ preventContextMenu = false } = {}) {
   const scopeRef = useRef(null);
 
   useEffect(() => {
@@ -73,11 +73,21 @@ export default function useAntiCopy() {
       if (!startsInEditable || !endsInEditable) clearSelection();
     };
 
+    const preventContextMenuAction = (event) => {
+      if (!isEditableTarget(event.target)) {
+        event.preventDefault();
+        clearSelection();
+      }
+    };
+
     scope.addEventListener('selectstart', preventCopyUnlessEditable, true);
     scope.addEventListener('copy', preventCopyUnlessEditable, true);
     scope.addEventListener('cut', preventCopyUnlessEditable, true);
     scope.addEventListener('dragstart', preventCopyUnlessEditable, true);
     scope.addEventListener('keydown', preventShortcut, true);
+    if (preventContextMenu) {
+      scope.addEventListener('contextmenu', preventContextMenuAction, true);
+    }
     document.addEventListener('selectionchange', preventNonEditableSelection, true);
 
     return () => {
@@ -87,9 +97,12 @@ export default function useAntiCopy() {
       scope.removeEventListener('cut', preventCopyUnlessEditable, true);
       scope.removeEventListener('dragstart', preventCopyUnlessEditable, true);
       scope.removeEventListener('keydown', preventShortcut, true);
+      if (preventContextMenu) {
+        scope.removeEventListener('contextmenu', preventContextMenuAction, true);
+      }
       document.removeEventListener('selectionchange', preventNonEditableSelection, true);
     };
-  }, []);
+  }, [preventContextMenu]);
 
   return scopeRef;
 }

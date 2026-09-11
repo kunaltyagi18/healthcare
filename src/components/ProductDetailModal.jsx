@@ -5,10 +5,14 @@ import useAntiCopy from '../utils/useAntiCopy';
 
 export default function ProductDetailModal({ product, onClose, onNavigate }) {
   const antiCopyRef = useAntiCopy();
-  const productImages = [...new Set([
+  const allProductImages = [...new Set([
     product.image,
     ...(Array.isArray(product.images) ? product.images : []),
   ].filter(Boolean))];
+  const hasCloudinaryImages = allProductImages.some((image) => String(image).includes('res.cloudinary.com'));
+  const productImages = allProductImages.filter((image) => (
+    !hasCloudinaryImages || !String(image).startsWith('/products/')
+  ));
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   useEffect(() => {

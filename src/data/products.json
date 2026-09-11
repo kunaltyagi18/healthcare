@@ -11,7 +11,14 @@
     "discountedPrice": 1400,
     "gstRate": 0.05,
     "totalValue": 1470,
-    "image": "/products/image1.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108817/shivshakti-products/SVS-ELT-111_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108817/shivshakti-products/SVS-ELT-111_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108819/shivshakti-products/SVS-ELT-111_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108817/shivshakti-products/SVS-ELT-111_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108818/shivshakti-products/SVS-ELT-111_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108816/shivshakti-products/SVS-ELT-111_5.png"
+    ]
   },
   {
     "id": "product-2",
@@ -25,7 +32,13 @@
     "discountedPrice": 2200,
     "gstRate": 0.05,
     "totalValue": 2310,
-    "image": "/products/image2.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108824/shivshakti-products/SVS-ELT-112_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108824/shivshakti-products/SVS-ELT-112_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108823/shivshakti-products/SVS-ELT-112_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108822/shivshakti-products/SVS-ELT-112_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108822/shivshakti-products/SVS-ELT-112_4.png"
+    ]
   },
   {
     "id": "product-3",
@@ -39,7 +52,15 @@
     "discountedPrice": 2200,
     "gstRate": 0.05,
     "totalValue": 2310,
-    "image": "/products/image3.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108822/shivshakti-products/SVS-ELT-113_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108822/shivshakti-products/SVS-ELT-113_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108830/shivshakti-products/SVS-ELT-113_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108829/shivshakti-products/SVS-ELT-113_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108828/shivshakti-products/SVS-ELT-113_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108827/shivshakti-products/SVS-ELT-113_5.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108827/shivshakti-products/SVS-ELT-113_6.png"
+    ]
   },
   {
     "id": "product-4",
@@ -53,7 +74,14 @@
     "discountedPrice": 2200,
     "gstRate": 0.05,
     "totalValue": 2310,
-    "image": "/products/image4.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108835/shivshakti-products/SVS-ELT-114_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108835/shivshakti-products/SVS-ELT-114_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108834/shivshakti-products/SVS-ELT-114_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108833/shivshakti-products/SVS-ELT-114_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108832/shivshakti-products/SVS-ELT-114_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108832/shivshakti-products/SVS-ELT-114_5.png"
+    ]
   },
   {
     "id": "product-5",
@@ -67,7 +95,14 @@
     "discountedPrice": 6500,
     "gstRate": 0.05,
     "totalValue": 6825,
-    "image": "/products/image5.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108838/shivshakti-products/SVS-ELT-115_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108838/shivshakti-products/SVS-ELT-115_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108838/shivshakti-products/SVS-ELT-115_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108838/shivshakti-products/SVS-ELT-115_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108837/shivshakti-products/SVS-ELT-115_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108837/shivshakti-products/SVS-ELT-115_5.png"
+    ]
   },
   {
     "id": "product-6",
@@ -1400,7 +1435,13 @@
     "discountedPrice": 400,
     "gstRate": 0.05,
     "totalValue": 420,
-    "image": "/products/image98.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108844/shivshakti-products/SVS-ELTA-210_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108844/shivshakti-products/SVS-ELTA-210_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108842/shivshakti-products/SVS-ELTA-210_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108841/shivshakti-products/SVS-ELTA-210_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108841/shivshakti-products/SVS-ELTA-210_4.png"
+    ]
   },
   {
     "id": "product-101",
@@ -1414,7 +1455,13 @@
     "discountedPrice": 360,
     "gstRate": 0.05,
     "totalValue": 378,
-    "image": "/products/image99.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108841/shivshakti-products/SVS-ELTA-211_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108841/shivshakti-products/SVS-ELTA-211_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108849/shivshakti-products/SVS-ELTA-211_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108850/shivshakti-products/SVS-ELTA-211_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108847/shivshakti-products/SVS-ELTA-211_4.png"
+    ]
   },
   {
     "id": "product-102",
@@ -1428,7 +1475,13 @@
     "discountedPrice": 280,
     "gstRate": 0.05,
     "totalValue": 294,
-    "image": "/products/image100.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108847/shivshakti-products/SVS-ELTA-212_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108847/shivshakti-products/SVS-ELTA-212_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108847/shivshakti-products/SVS-ELTA-212_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108855/shivshakti-products/SVS-ELTA-212_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108855/shivshakti-products/SVS-ELTA-212_4.png"
+    ]
   },
   {
     "id": "product-103",
@@ -1442,7 +1495,13 @@
     "discountedPrice": 160,
     "gstRate": 0.05,
     "totalValue": 168,
-    "image": "/products/image101.png"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108853/shivshakti-products/SVS-ELTA-213_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108853/shivshakti-products/SVS-ELTA-213_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108853/shivshakti-products/SVS-ELTA-213_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108853/shivshakti-products/SVS-ELTA-213_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108861/shivshakti-products/SVS-ELTA-213_4.png"
+    ]
   },
   {
     "id": "product-104",
@@ -1456,7 +1515,13 @@
     "discountedPrice": 180,
     "gstRate": 0.05,
     "totalValue": 189,
-    "image": "/products/image102.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108863/shivshakti-products/SVS-ELTA-214_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108863/shivshakti-products/SVS-ELTA-214_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108859/shivshakti-products/SVS-ELTA-214_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108858/shivshakti-products/SVS-ELTA-214_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108859/shivshakti-products/SVS-ELTA-214_4.png"
+    ]
   },
   {
     "id": "product-105",
@@ -1470,7 +1535,13 @@
     "discountedPrice": 160,
     "gstRate": 0.05,
     "totalValue": 168,
-    "image": "/products/image103.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108866/shivshakti-products/SVS-ELTA-215_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108866/shivshakti-products/SVS-ELTA-215_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108866/shivshakti-products/SVS-ELTA-215_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108865/shivshakti-products/SVS-ELTA-215_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108865/shivshakti-products/SVS-ELTA-215_4.png"
+    ]
   },
   {
     "id": "product-106",
@@ -1484,7 +1555,13 @@
     "discountedPrice": 60,
     "gstRate": 0.05,
     "totalValue": 63,
-    "image": "/products/image104.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108868/shivshakti-products/SVS-ELTA-216_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108868/shivshakti-products/SVS-ELTA-216_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108871/shivshakti-products/SVS-ELTA-216_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108874/shivshakti-products/SVS-ELTA-216_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108873/shivshakti-products/SVS-ELTA-216_4.png"
+    ]
   },
   {
     "id": "product-107",
@@ -1498,7 +1575,13 @@
     "discountedPrice": 90,
     "gstRate": 0.05,
     "totalValue": 94.5,
-    "image": "/products/image105.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108871/shivshakti-products/SVS-ELTA-217_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108871/shivshakti-products/SVS-ELTA-217_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108871/shivshakti-products/SVS-ELTA-217_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108879/shivshakti-products/SVS-ELTA-217_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108877/shivshakti-products/SVS-ELTA-217_4.png"
+    ]
   },
   {
     "id": "product-108",
@@ -1512,7 +1595,13 @@
     "discountedPrice": 25,
     "gstRate": 0.05,
     "totalValue": 26.25,
-    "image": "/products/image106.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108876/shivshakti-products/SVS-ELTA-218_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108876/shivshakti-products/SVS-ELTA-218_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108876/shivshakti-products/SVS-ELTA-218_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108876/shivshakti-products/SVS-ELTA-218_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108883/shivshakti-products/SVS-ELTA-218_4.png"
+    ]
   },
   {
     "id": "product-109",
@@ -1540,7 +1629,13 @@
     "discountedPrice": 150,
     "gstRate": 0.05,
     "totalValue": 157.5,
-    "image": "/products/image108.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108883/shivshakti-products/SVS-ELTA-220_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108883/shivshakti-products/SVS-ELTA-220_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108882/shivshakti-products/SVS-ELTA-220_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108882/shivshakti-products/SVS-ELTA-220_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108882/shivshakti-products/SVS-ELTA-220_4.png"
+    ]
   },
   {
     "id": "product-111",
@@ -1554,7 +1649,13 @@
     "discountedPrice": 180,
     "gstRate": 0.05,
     "totalValue": 189,
-    "image": "/products/image109.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108887/shivshakti-products/SVS-ELTA-221_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108887/shivshakti-products/SVS-ELTA-221_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108888/shivshakti-products/SVS-ELTA-221_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108886/shivshakti-products/SVS-ELTA-221_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108886/shivshakti-products/SVS-ELTA-221_4.png"
+    ]
   },
   {
     "id": "product-112",
@@ -1568,7 +1669,13 @@
     "discountedPrice": 600,
     "gstRate": 0.05,
     "totalValue": 630,
-    "image": "/products/image1029.png"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108886/shivshakti-products/SVS-ELTA-222_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108886/shivshakti-products/SVS-ELTA-222_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108892/shivshakti-products/SVS-ELTA-222_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108892/shivshakti-products/SVS-ELTA-222_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108890/shivshakti-products/SVS-ELTA-222_4.png"
+    ]
   },
   {
     "id": "product-113",
@@ -1582,7 +1689,13 @@
     "discountedPrice": 600,
     "gstRate": 0.05,
     "totalValue": 630,
-    "image": "/products/image1029.png"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108890/shivshakti-products/SVS-ELTA-223_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108890/shivshakti-products/SVS-ELTA-223_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108890/shivshakti-products/SVS-ELTA-223_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108897/shivshakti-products/SVS-ELTA-223_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108896/shivshakti-products/SVS-ELTA-223_4.png"
+    ]
   },
   {
     "id": "product-114",
@@ -1596,7 +1709,13 @@
     "discountedPrice": 350,
     "gstRate": 0.05,
     "totalValue": 367.5,
-    "image": "/products/image110.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108895/shivshakti-products/SVS-ELTA-224_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108895/shivshakti-products/SVS-ELTA-224_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108895/shivshakti-products/SVS-ELTA-224_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108895/shivshakti-products/SVS-ELTA-224_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108902/shivshakti-products/SVS-ELTA-224_4.png"
+    ]
   },
   {
     "id": "product-115",
@@ -1610,7 +1729,13 @@
     "discountedPrice": 350,
     "gstRate": 0.05,
     "totalValue": 367.5,
-    "image": "/products/image111.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108903/shivshakti-products/SVS-ELTA-225_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108903/shivshakti-products/SVS-ELTA-225_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108900/shivshakti-products/SVS-ELTA-225_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108900/shivshakti-products/SVS-ELTA-225_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108901/shivshakti-products/SVS-ELTA-225_4.png"
+    ]
   },
   {
     "id": "product-116",
@@ -1624,7 +1749,13 @@
     "discountedPrice": 7500,
     "gstRate": 0.05,
     "totalValue": 7875,
-    "image": "/products/image112.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108908/shivshakti-products/SVS-ELTA-226_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108908/shivshakti-products/SVS-ELTA-226_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108907/shivshakti-products/SVS-ELTA-226_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108906/shivshakti-products/SVS-ELTA-226_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108906/shivshakti-products/SVS-ELTA-226_4.png"
+    ]
   },
   {
     "id": "product-117",
@@ -1638,7 +1769,13 @@
     "discountedPrice": 4500,
     "gstRate": 0.05,
     "totalValue": 4725,
-    "image": "/products/image113.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108906/shivshakti-products/SVS-ELTA-227_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108906/shivshakti-products/SVS-ELTA-227_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108912/shivshakti-products/SVS-ELTA-227_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108912/shivshakti-products/SVS-ELTA-227_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108911/shivshakti-products/SVS-ELTA-227_4.png"
+    ]
   },
   {
     "id": "product-118",
@@ -1652,7 +1789,13 @@
     "discountedPrice": 900,
     "gstRate": 0.05,
     "totalValue": 945,
-    "image": "/products/image114.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108910/shivshakti-products/SVS-ELTA-228_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108910/shivshakti-products/SVS-ELTA-228_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108910/shivshakti-products/SVS-ELTA-228_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108915/shivshakti-products/SVS-ELTA-228_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108915/shivshakti-products/SVS-ELTA-228_4.png"
+    ]
   },
   {
     "id": "product-119",
@@ -1666,7 +1809,13 @@
     "discountedPrice": 900,
     "gstRate": 0.05,
     "totalValue": 945,
-    "image": "/products/image115.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108915/shivshakti-products/SVS-ELTA-229_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108915/shivshakti-products/SVS-ELTA-229_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108915/shivshakti-products/SVS-ELTA-229_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108915/shivshakti-products/SVS-ELTA-229_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108920/shivshakti-products/SVS-ELTA-229_4.png"
+    ]
   },
   {
     "id": "product-120",
@@ -1680,7 +1829,13 @@
     "discountedPrice": 800,
     "gstRate": 0.05,
     "totalValue": 840,
-    "image": "/products/image116.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108919/shivshakti-products/SVS-ELTA-230_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108919/shivshakti-products/SVS-ELTA-230_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108918/shivshakti-products/SVS-ELTA-230_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108918/shivshakti-products/SVS-ELTA-230_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108918/shivshakti-products/SVS-ELTA-230_4.png"
+    ]
   },
   {
     "id": "product-121",
@@ -1694,7 +1849,13 @@
     "discountedPrice": 800,
     "gstRate": 0.05,
     "totalValue": 840,
-    "image": "/products/image117.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108924/shivshakti-products/SVS-ELTA-231_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108924/shivshakti-products/SVS-ELTA-231_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108924/shivshakti-products/SVS-ELTA-231_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108923/shivshakti-products/SVS-ELTA-231_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108923/shivshakti-products/SVS-ELTA-231_4.png"
+    ]
   },
   {
     "id": "product-122",
@@ -1708,7 +1869,13 @@
     "discountedPrice": 900,
     "gstRate": 0.05,
     "totalValue": 945,
-    "image": "/products/image118.png"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108923/shivshakti-products/SVS-ELTA-232_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108923/shivshakti-products/SVS-ELTA-232_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108928/shivshakti-products/SVS-ELTA-232_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108927/shivshakti-products/SVS-ELTA-232_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108926/shivshakti-products/SVS-ELTA-232_4.png"
+    ]
   },
   {
     "id": "product-123",
@@ -1722,7 +1889,13 @@
     "discountedPrice": 9500,
     "gstRate": 0.05,
     "totalValue": 9975,
-    "image": "/products/image119.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108926/shivshakti-products/SVS-ELTA-233_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108926/shivshakti-products/SVS-ELTA-233_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108926/shivshakti-products/SVS-ELTA-233_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108934/shivshakti-products/SVS-ELTA-233_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108932/shivshakti-products/SVS-ELTA-233_4.png"
+    ]
   },
   {
     "id": "product-124",
@@ -1736,7 +1909,13 @@
     "discountedPrice": 900,
     "gstRate": 0.05,
     "totalValue": 945,
-    "image": "/products/image120.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108931/shivshakti-products/SVS-ELTA-234_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108931/shivshakti-products/SVS-ELTA-234_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108931/shivshakti-products/SVS-ELTA-234_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108931/shivshakti-products/SVS-ELTA-234_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108940/shivshakti-products/SVS-ELTA-234_4.png"
+    ]
   },
   {
     "id": "product-125",
@@ -1750,7 +1929,13 @@
     "discountedPrice": 450,
     "gstRate": 0.05,
     "totalValue": 472.5,
-    "image": "/products/image121.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108937/shivshakti-products/SVS-ELTA-235_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108937/shivshakti-products/SVS-ELTA-235_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108936/shivshakti-products/SVS-ELTA-235_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108936/shivshakti-products/SVS-ELTA-235_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108936/shivshakti-products/SVS-ELTA-235_4.png"
+    ]
   },
   {
     "id": "product-126",
@@ -3206,7 +3391,13 @@
     "discountedPrice": 22000,
     "gstRate": 0.05,
     "totalValue": 23100,
-    "image": "/products/image221.png"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108945/shivshakti-products/SVS-HLE-339_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108945/shivshakti-products/SVS-HLE-339_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108944/shivshakti-products/SVS-HLE-339_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108942/shivshakti-products/SVS-HLE-339_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108942/shivshakti-products/SVS-HLE-339_4.png"
+    ]
   },
   {
     "id": "product-230",
@@ -5460,7 +5651,13 @@
     "discountedPrice": 7500,
     "gstRate": 0.05,
     "totalValue": 7875,
-    "image": "/products/image359.png"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108943/shivshakti-products/SVS-REH-500_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108943/shivshakti-products/SVS-REH-500_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108950/shivshakti-products/SVS-REH-500_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108949/shivshakti-products/SVS-REH-500_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108947/shivshakti-products/SVS-REH-500_4.png"
+    ]
   },
   {
     "id": "product-391",
@@ -6017,7 +6214,13 @@
     "discountedPrice": 18000,
     "gstRate": 0.05,
     "totalValue": 18900,
-    "image": "/products/image393.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108948/shivshakti-products/SVS-REH-539_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108948/shivshakti-products/SVS-REH-539_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108948/shivshakti-products/SVS-REH-539_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108957/shivshakti-products/SVS-REH-539_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108955/shivshakti-products/SVS-REH-539_4.png"
+    ]
   },
   {
     "id": "product-430",
@@ -6031,7 +6234,13 @@
     "discountedPrice": 7500,
     "gstRate": 0.05,
     "totalValue": 7875,
-    "image": "/products/image394.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108953/shivshakti-products/SVS-REH-540_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108953/shivshakti-products/SVS-REH-540_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108954/shivshakti-products/SVS-REH-540_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108953/shivshakti-products/SVS-REH-540_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108966/shivshakti-products/SVS-REH-540_4.png"
+    ]
   },
   {
     "id": "product-431",
@@ -6045,7 +6254,13 @@
     "discountedPrice": 6500,
     "gstRate": 0.05,
     "totalValue": 6825,
-    "image": "/products/image395.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108962/shivshakti-products/SVS-REH-541_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108962/shivshakti-products/SVS-REH-541_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108961/shivshakti-products/SVS-REH-541_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108961/shivshakti-products/SVS-REH-541_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108961/shivshakti-products/SVS-REH-541_4.png"
+    ]
   },
   {
     "id": "product-432",
@@ -6101,7 +6316,13 @@
     "discountedPrice": 1200,
     "gstRate": 0.05,
     "totalValue": 1260,
-    "image": "/products/image399.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108972/shivshakti-products/SVS-REH-545_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108972/shivshakti-products/SVS-REH-545_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108968/shivshakti-products/SVS-REH-545_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108970/shivshakti-products/SVS-REH-545_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108971/shivshakti-products/SVS-REH-545_4.png"
+    ]
   },
   {
     "id": "product-436",
@@ -6115,7 +6336,13 @@
     "discountedPrice": 900,
     "gstRate": 0.05,
     "totalValue": 945,
-    "image": "/products/image400.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108971/shivshakti-products/SVS-REH-546_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108971/shivshakti-products/SVS-REH-546_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108977/shivshakti-products/SVS-REH-546_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108974/shivshakti-products/SVS-REH-546_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108975/shivshakti-products/SVS-REH-546_4.png"
+    ]
   },
   {
     "id": "product-437",
@@ -6129,7 +6356,13 @@
     "discountedPrice": 300,
     "gstRate": 0.05,
     "totalValue": 315,
-    "image": "/products/image401.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108974/shivshakti-products/SVS-REH-547_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108974/shivshakti-products/SVS-REH-547_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108975/shivshakti-products/SVS-REH-547_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108981/shivshakti-products/SVS-REH-547_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108980/shivshakti-products/SVS-REH-547_4.png"
+    ]
   },
   {
     "id": "product-438",
@@ -6143,7 +6376,13 @@
     "discountedPrice": 400,
     "gstRate": 0.05,
     "totalValue": 420,
-    "image": "/products/image402.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108980/shivshakti-products/SVS-REH-548_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108980/shivshakti-products/SVS-REH-548_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108980/shivshakti-products/SVS-REH-548_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108980/shivshakti-products/SVS-REH-548_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108984/shivshakti-products/SVS-REH-548_4.png"
+    ]
   },
   {
     "id": "product-439",
@@ -6157,7 +6396,13 @@
     "discountedPrice": 500,
     "gstRate": 0.05,
     "totalValue": 525,
-    "image": "/products/image403.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108984/shivshakti-products/SVS-REH-549_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108984/shivshakti-products/SVS-REH-549_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108984/shivshakti-products/SVS-REH-549_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108984/shivshakti-products/SVS-REH-549_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108984/shivshakti-products/SVS-REH-549_4.png"
+    ]
   },
   {
     "id": "product-440",
@@ -6171,7 +6416,12 @@
     "discountedPrice": 5500,
     "gstRate": 0.05,
     "totalValue": 5775,
-    "image": "/products/image404.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108989/shivshakti-products/SVS-REH-550_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108989/shivshakti-products/SVS-REH-550_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108989/shivshakti-products/SVS-REH-550_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108989/shivshakti-products/SVS-REH-550_3.png"
+    ]
   },
   {
     "id": "product-441",
@@ -6185,7 +6435,13 @@
     "discountedPrice": 14000,
     "gstRate": 0.05,
     "totalValue": 14700,
-    "image": "/products/image405.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108989/shivshakti-products/SVS-REH-551_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108989/shivshakti-products/SVS-REH-551_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108989/shivshakti-products/SVS-REH-551_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108995/shivshakti-products/SVS-REH-551_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108995/shivshakti-products/SVS-REH-551_4.png"
+    ]
   },
   {
     "id": "product-442",
@@ -6199,7 +6455,14 @@
     "discountedPrice": 42000,
     "gstRate": 0.05,
     "totalValue": 44100,
-    "image": "/products/image406.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108995/shivshakti-products/SVS-REH-552_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108995/shivshakti-products/SVS-REH-552_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108995/shivshakti-products/SVS-REH-552_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108995/shivshakti-products/SVS-REH-552_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109000/shivshakti-products/SVS-REH-552_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109000/shivshakti-products/SVS-REH-552_5.png"
+    ]
   },
   {
     "id": "product-443",
@@ -6213,7 +6476,12 @@
     "discountedPrice": 925000,
     "gstRate": 0.05,
     "totalValue": 971250,
-    "image": "/products/image407.png"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108999/shivshakti-products/SVS-REH-553_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108999/shivshakti-products/SVS-REH-553_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108999/shivshakti-products/SVS-REH-553_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789108999/shivshakti-products/SVS-REH-553_3.png"
+    ]
   },
   {
     "id": "product-444",
@@ -6255,7 +6523,12 @@
     "discountedPrice": 4800,
     "gstRate": 0.05,
     "totalValue": 5040,
-    "image": "/products/image410.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109363/shivshakti-products/SVS-OT-556_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109363/shivshakti-products/SVS-OT-556_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109364/shivshakti-products/SVS-OT-556_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109363/shivshakti-products/SVS-OT-556_3.png"
+    ]
   },
   {
     "id": "product-447",
@@ -6325,7 +6598,12 @@
     "discountedPrice": 9000,
     "gstRate": 0.05,
     "totalValue": 9450,
-    "image": "/products/image415.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109368/shivshakti-products/SVS-OT-561_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109368/shivshakti-products/SVS-OT-561_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109368/shivshakti-products/SVS-OT-561_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109368/shivshakti-products/SVS-OT-561_3.png"
+    ]
   },
   {
     "id": "product-452",
@@ -6409,7 +6687,13 @@
     "discountedPrice": 6500,
     "gstRate": 0.05,
     "totalValue": 6825,
-    "image": "/products/image421.png"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109368/shivshakti-products/SVS-OT-567_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109368/shivshakti-products/SVS-OT-567_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109368/shivshakti-products/SVS-OT-567_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109372/shivshakti-products/SVS-OT-567_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109372/shivshakti-products/SVS-OT-567_4.png"
+    ]
   },
   {
     "id": "product-458",
@@ -6493,7 +6777,13 @@
     "discountedPrice": 2800,
     "gstRate": 0.18,
     "totalValue": 3304,
-    "image": "/products/image427.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109372/shivshakti-products/SVS-OT-573_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109372/shivshakti-products/SVS-OT-573_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109372/shivshakti-products/SVS-OT-573_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109372/shivshakti-products/SVS-OT-573_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109378/shivshakti-products/SVS-OT-573_4.png"
+    ]
   },
   {
     "id": "product-464",
@@ -6507,7 +6797,13 @@
     "discountedPrice": 3400,
     "gstRate": 0.18,
     "totalValue": 4012,
-    "image": "/products/image428.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109378/shivshakti-products/SVS-OT-574_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109378/shivshakti-products/SVS-OT-574_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109378/shivshakti-products/SVS-OT-574_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109378/shivshakti-products/SVS-OT-574_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109377/shivshakti-products/SVS-OT-574_4.png"
+    ]
   },
   {
     "id": "product-465",
@@ -6535,7 +6831,12 @@
     "discountedPrice": 3400,
     "gstRate": 0.18,
     "totalValue": 4012,
-    "image": "/products/image430.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109383/shivshakti-products/SVS-OT-576_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109383/shivshakti-products/SVS-OT-576_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109383/shivshakti-products/SVS-OT-576_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109383/shivshakti-products/SVS-OT-576_3.png"
+    ]
   },
   {
     "id": "product-467",
@@ -6577,7 +6878,13 @@
     "discountedPrice": 600,
     "gstRate": 0.18,
     "totalValue": 708,
-    "image": "/products/image433.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109383/shivshakti-products/SVS-OT-579_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109383/shivshakti-products/SVS-OT-579_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109382/shivshakti-products/SVS-OT-579_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109387/shivshakti-products/SVS-OT-579_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109388/shivshakti-products/SVS-OT-579_4.png"
+    ]
   },
   {
     "id": "product-470",
@@ -6591,7 +6898,13 @@
     "discountedPrice": 4500,
     "gstRate": 0.18,
     "totalValue": 5310,
-    "image": "/products/image434.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109387/shivshakti-products/SVS-OT-580_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109387/shivshakti-products/SVS-OT-580_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109387/shivshakti-products/SVS-OT-580_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109386/shivshakti-products/SVS-OT-580_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109393/shivshakti-products/SVS-OT-580_4.png"
+    ]
   },
   {
     "id": "product-471",
@@ -6717,7 +7030,14 @@
     "discountedPrice": 550,
     "gstRate": 0.05,
     "totalValue": 577.5,
-    "image": "/products/image438.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109395/shivshakti-products/SVS-OT-589_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109395/shivshakti-products/SVS-OT-589_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109394/shivshakti-products/SVS-OT-589_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109394/shivshakti-products/SVS-OT-589_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109394/shivshakti-products/SVS-OT-589_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109399/shivshakti-products/SVS-OT-589_5.png"
+    ]
   },
   {
     "id": "product-480",
@@ -6731,7 +7051,14 @@
     "discountedPrice": 750,
     "gstRate": 0.05,
     "totalValue": 787.5,
-    "image": "/products/image438.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109400/shivshakti-products/SVS-OT-590_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109400/shivshakti-products/SVS-OT-590_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109399/shivshakti-products/SVS-OT-590_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109399/shivshakti-products/SVS-OT-590_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109400/shivshakti-products/SVS-OT-590_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109404/shivshakti-products/SVS-OT-590_5.png"
+    ]
   },
   {
     "id": "product-481",
@@ -7114,7 +7441,11 @@
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027549/shivshakti-products/SVS-OT-617_1.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027564/shivshakti-products/SVS-OT-617_2.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027570/shivshakti-products/SVS-OT-617_3.png",
-      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027570/shivshakti-products/SVS-OT-617_4.png"
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027570/shivshakti-products/SVS-OT-617_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109404/shivshakti-products/SVS-OT-617_5.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109404/shivshakti-products/SVS-OT-617_6.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109404/shivshakti-products/SVS-OT-617_7.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109404/shivshakti-products/SVS-OT-617_8.png"
     ]
   },
   {
@@ -7134,7 +7465,11 @@
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027584/shivshakti-products/SVS-OT-618_1.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027584/shivshakti-products/SVS-OT-618_2.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027592/shivshakti-products/SVS-OT-618_3.png",
-      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027592/shivshakti-products/SVS-OT-618_4.png"
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027592/shivshakti-products/SVS-OT-618_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109408/shivshakti-products/SVS-OT-618_5.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109408/shivshakti-products/SVS-OT-618_6.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109408/shivshakti-products/SVS-OT-618_7.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109408/shivshakti-products/SVS-OT-618_8.png"
     ]
   },
   {
@@ -7154,7 +7489,11 @@
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027595/shivshakti-products/SVS-OT-619_1.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027601/shivshakti-products/SVS-OT-619_2.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027602/shivshakti-products/SVS-OT-619_3.png",
-      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027608/shivshakti-products/SVS-OT-619_4.png"
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027608/shivshakti-products/SVS-OT-619_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109408/shivshakti-products/SVS-OT-619_5.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109411/shivshakti-products/SVS-OT-619_6.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109412/shivshakti-products/SVS-OT-619_7.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109411/shivshakti-products/SVS-OT-619_8.png"
     ]
   },
   {
@@ -7174,7 +7513,11 @@
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027609/shivshakti-products/SVS-OT-620_1.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027622/shivshakti-products/SVS-OT-620_2.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027617/shivshakti-products/SVS-OT-620_3.png",
-      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027617/shivshakti-products/SVS-OT-620_4.png"
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027617/shivshakti-products/SVS-OT-620_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109411/shivshakti-products/SVS-OT-620_5.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109411/shivshakti-products/SVS-OT-620_6.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109417/shivshakti-products/SVS-OT-620_7.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109417/shivshakti-products/SVS-OT-620_8.png"
     ]
   },
   {
@@ -7388,7 +7731,11 @@
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027685/shivshakti-products/SVS-OT-631_1.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027686/shivshakti-products/SVS-OT-631_2.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027686/shivshakti-products/SVS-OT-631_3.png",
-      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027689/shivshakti-products/SVS-OT-631_4.png"
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789027689/shivshakti-products/SVS-OT-631_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109417/shivshakti-products/SVS-OT-631_5.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109417/shivshakti-products/SVS-OT-631_6.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109417/shivshakti-products/SVS-OT-631_7.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109420/shivshakti-products/SVS-OT-631_8.png"
     ]
   },
   {
@@ -7811,7 +8158,13 @@
     "discountedPrice": 11500,
     "gstRate": 0.05,
     "totalValue": 12075,
-    "image": "/products/image488.png"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109421/shivshakti-products/SVS-SEN-656_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109421/shivshakti-products/SVS-SEN-656_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109420/shivshakti-products/SVS-SEN-656_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109420/shivshakti-products/SVS-SEN-656_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109420/shivshakti-products/SVS-SEN-656_4.png"
+    ]
   },
   {
     "id": "product-547",
@@ -7955,7 +8308,13 @@
     "discountedPrice": 52000,
     "gstRate": 0.05,
     "totalValue": 54600,
-    "image": "/products/image497.png"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109425/shivshakti-products/SVS-SEN-665_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109425/shivshakti-products/SVS-SEN-665_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109424/shivshakti-products/SVS-SEN-665_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109425/shivshakti-products/SVS-SEN-665_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109424/shivshakti-products/SVS-SEN-665_4.png"
+    ]
   },
   {
     "id": "product-556",
@@ -8120,7 +8479,13 @@
     "discountedPrice": 28000,
     "gstRate": 0.05,
     "totalValue": 29400,
-    "image": "/products/image508.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109424/shivshakti-products/SVS-SEN-676_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109424/shivshakti-products/SVS-SEN-676_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109428/shivshakti-products/SVS-SEN-676_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109428/shivshakti-products/SVS-SEN-676_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109428/shivshakti-products/SVS-SEN-676_4.png"
+    ]
   },
   {
     "id": "product-567",
@@ -8497,7 +8862,9 @@
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030508/shivshakti-products/SVS-SEN-697_1.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030507/shivshakti-products/SVS-SEN-697_2.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030508/shivshakti-products/SVS-SEN-697_3.png",
-      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030508/shivshakti-products/SVS-SEN-697_4.png"
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030508/shivshakti-products/SVS-SEN-697_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109428/shivshakti-products/SVS-SEN-697_5.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109428/shivshakti-products/SVS-SEN-697_6.png"
     ]
   },
   {
@@ -8566,7 +8933,13 @@
     "discountedPrice": 28000,
     "gstRate": 0.05,
     "totalValue": 29400,
-    "image": "/products/image531.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109432/shivshakti-products/SVS-SEN-701_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109432/shivshakti-products/SVS-SEN-701_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109432/shivshakti-products/SVS-SEN-701_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109432/shivshakti-products/SVS-SEN-701_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109432/shivshakti-products/SVS-SEN-701_4.png"
+    ]
   },
   {
     "id": "product-592",
@@ -8620,7 +8993,13 @@
     "discountedPrice": 15000,
     "gstRate": 0.05,
     "totalValue": 15750,
-    "image": "/products/image534.png"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109432/shivshakti-products/SVS-SEN-704_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109432/shivshakti-products/SVS-SEN-704_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109437/shivshakti-products/SVS-SEN-704_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109436/shivshakti-products/SVS-SEN-704_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109437/shivshakti-products/SVS-SEN-704_4.png"
+    ]
   },
   {
     "id": "product-595",
@@ -8713,7 +9092,11 @@
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030551/shivshakti-products/SVS-SEN-709_1.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030550/shivshakti-products/SVS-SEN-709_2.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030557/shivshakti-products/SVS-SEN-709_3.png",
-      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030557/shivshakti-products/SVS-SEN-709_4.png"
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030557/shivshakti-products/SVS-SEN-709_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109436/shivshakti-products/SVS-SEN-709_5.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109436/shivshakti-products/SVS-SEN-709_6.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109441/shivshakti-products/SVS-SEN-709_7.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109440/shivshakti-products/SVS-SEN-709_8.png"
     ]
   },
   {
@@ -8733,7 +9116,11 @@
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030557/shivshakti-products/SVS-SEN-710_1.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030557/shivshakti-products/SVS-SEN-710_2.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030556/shivshakti-products/SVS-SEN-710_3.png",
-      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030564/shivshakti-products/SVS-SEN-710_4.png"
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030564/shivshakti-products/SVS-SEN-710_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109440/shivshakti-products/SVS-SEN-710_5.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109440/shivshakti-products/SVS-SEN-710_6.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109440/shivshakti-products/SVS-SEN-710_7.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109445/shivshakti-products/SVS-SEN-710_8.png"
     ]
   },
   {
@@ -8753,7 +9140,11 @@
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030564/shivshakti-products/SVS-SEN-711_1.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030565/shivshakti-products/SVS-SEN-711_2.png",
       "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030564/shivshakti-products/SVS-SEN-711_3.png",
-      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030564/shivshakti-products/SVS-SEN-711_4.png"
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789030564/shivshakti-products/SVS-SEN-711_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109445/shivshakti-products/SVS-SEN-711_5.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109445/shivshakti-products/SVS-SEN-711_6.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109445/shivshakti-products/SVS-SEN-711_7.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109445/shivshakti-products/SVS-SEN-711_8.png"
     ]
   },
   {
@@ -8768,7 +9159,13 @@
     "discountedPrice": 4200,
     "gstRate": 0.05,
     "totalValue": 4410,
-    "image": "/products/image538.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109450/shivshakti-products/SVS-SEN-712_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109450/shivshakti-products/SVS-SEN-712_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109450/shivshakti-products/SVS-SEN-712_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109449/shivshakti-products/SVS-SEN-712_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109450/shivshakti-products/SVS-SEN-712_4.png"
+    ]
   },
   {
     "id": "product-603",
@@ -8782,7 +9179,13 @@
     "discountedPrice": 5500,
     "gstRate": 0.05,
     "totalValue": 5775,
-    "image": "/products/image538.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109450/shivshakti-products/SVS-SEN-713_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109450/shivshakti-products/SVS-SEN-713_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109462/shivshakti-products/SVS-SEN-713_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109462/shivshakti-products/SVS-SEN-713_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109459/shivshakti-products/SVS-SEN-713_4.png"
+    ]
   },
   {
     "id": "product-604",
@@ -8796,7 +9199,13 @@
     "discountedPrice": 6200,
     "gstRate": 0.05,
     "totalValue": 6510,
-    "image": "/products/image538.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109465/shivshakti-products/SVS-SEN-714_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109465/shivshakti-products/SVS-SEN-714_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109463/shivshakti-products/SVS-SEN-714_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109470/shivshakti-products/SVS-SEN-714_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109467/shivshakti-products/SVS-SEN-714_4.png"
+    ]
   },
   {
     "id": "product-605",
@@ -9107,7 +9516,15 @@
     "discountedPrice": 11400,
     "gstRate": 0.05,
     "totalValue": 11970,
-    "image": "/products/image554.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109468/shivshakti-products/SVS-SEN-732_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109468/shivshakti-products/SVS-SEN-732_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109468/shivshakti-products/SVS-SEN-732_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109478/shivshakti-products/SVS-SEN-732_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109481/shivshakti-products/SVS-SEN-732_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109482/shivshakti-products/SVS-SEN-732_5.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109482/shivshakti-products/SVS-SEN-732_6.png"
+    ]
   },
   {
     "id": "product-623",
@@ -9353,7 +9770,13 @@
     "discountedPrice": 32000,
     "gstRate": 0.05,
     "totalValue": 33600,
-    "image": "/products/image568.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109483/shivshakti-products/SVS-SEN-747_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109483/shivshakti-products/SVS-SEN-747_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109483/shivshakti-products/SVS-SEN-747_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109485/shivshakti-products/SVS-SEN-747_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109484/shivshakti-products/SVS-SEN-747_4.png"
+    ]
   },
   {
     "id": "product-638",
@@ -11856,7 +12279,13 @@
     "discountedPrice": 16000,
     "gstRate": 0.05,
     "totalValue": 16800,
-    "image": "/products/image703.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109347/shivshakti-products/SVS-EXE-885_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109347/shivshakti-products/SVS-EXE-885_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109350/shivshakti-products/SVS-EXE-885_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109350/shivshakti-products/SVS-EXE-885_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109350/shivshakti-products/SVS-EXE-885_4.png"
+    ]
   },
   {
     "id": "product-776",
@@ -11910,7 +12339,13 @@
     "discountedPrice": 16000,
     "gstRate": 0.05,
     "totalValue": 16800,
-    "image": "/products/image706.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109350/shivshakti-products/SVS-EXE-888_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109350/shivshakti-products/SVS-EXE-888_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109349/shivshakti-products/SVS-EXE-888_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109353/shivshakti-products/SVS-EXE-888_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109355/shivshakti-products/SVS-EXE-888_4.png"
+    ]
   },
   {
     "id": "product-779",
@@ -12152,7 +12587,15 @@
     "discountedPrice": 6500,
     "gstRate": 0.05,
     "totalValue": 6825,
-    "image": "/products/image719.jpg"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109354/shivshakti-products/SVS-EXE-901_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109354/shivshakti-products/SVS-EXE-901_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109353/shivshakti-products/SVS-EXE-901_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109353/shivshakti-products/SVS-EXE-901_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109358/shivshakti-products/SVS-EXE-901_4.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109359/shivshakti-products/SVS-EXE-901_5.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109359/shivshakti-products/SVS-EXE-901_6.png"
+    ]
   },
   {
     "id": "product-792",
@@ -13654,7 +14097,13 @@
     "discountedPrice": null,
     "gstRate": null,
     "totalValue": null,
-    "image": "/products/image798.png"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109359/shivshakti-products/SVS-FIT-988_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109359/shivshakti-products/SVS-FIT-988_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109358/shivshakti-products/SVS-FIT-988_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109362/shivshakti-products/SVS-FIT-988_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109363/shivshakti-products/SVS-FIT-988_4.png"
+    ]
   },
   {
     "id": "product-879",
@@ -15536,7 +15985,13 @@
     "discountedPrice": 105000,
     "gstRate": 0.18,
     "totalValue": 123900,
-    "image": "/products/image912.png"
+    "image": "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109344/shivshakti-products/SVS-CMG-1103_1.png",
+    "images": [
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109344/shivshakti-products/SVS-CMG-1103_1.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109345/shivshakti-products/SVS-CMG-1103_2.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109347/shivshakti-products/SVS-CMG-1103_3.png",
+      "https://res.cloudinary.com/zx8iy4xx/image/upload/v1789109346/shivshakti-products/SVS-CMG-1103_4.png"
+    ]
   },
   {
     "id": "product-994",

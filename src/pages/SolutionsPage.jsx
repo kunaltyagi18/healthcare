@@ -1,4 +1,5 @@
 ﻿import usePageTitle from '../utils/usePageTitle';
+import useAntiCopy from '../utils/useAntiCopy';
 import {
   ArrowRight, Lightbulb, Settings, ShieldCheck, Target,
 } from 'lucide-react';
@@ -105,9 +106,10 @@ function IndustryItem({ icon: Icon, label }) {
    MAIN PAGE
 ───────────────────────────────────────── */
 export default function SolutionsPage({ onNavigate }) {
+  const antiCopyRef = useAntiCopy();
   usePageTitle('Healthcare Facility & Therapy Solutions');
   return (
-    <div className="sol-page">
+    <div className="sol-page" ref={antiCopyRef}>
 
       {/* ── Hero ── */}
       <section className="sol-hero">

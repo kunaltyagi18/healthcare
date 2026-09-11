@@ -24,7 +24,7 @@
   box-sizing: border-box;
 }
 
-/* Copy protection is limited to the product detail modal. The rest of the
+/* Copy protection is scoped to protected content surfaces. The rest of the
    site keeps normal text selection, context menus and DevTools access. */
 .anti-copy-scope,
 .anti-copy-scope * {
@@ -4644,6 +4644,13 @@ img {
   text-decoration: none;
 }
 
+.qc-cert-card.clickable-card {
+  width: 100%;
+  border-style: solid;
+  color: inherit;
+  font: inherit;
+}
+
 .qc-view-cert {
   display: flex;
   align-items: center;
@@ -4658,6 +4665,137 @@ img {
 
 .clickable-card:hover .qc-view-cert {
   color: #2e8b3d;
+}
+
+.qc-cert-preview-backdrop {
+  position: fixed;
+  z-index: 120;
+  inset: 0;
+  display: grid;
+  padding: 20px;
+  place-items: center;
+  background: rgba(9, 30, 53, 0.72);
+  backdrop-filter: blur(8px);
+}
+
+.qc-cert-preview {
+  display: flex;
+  width: min(1000px, 100%);
+  height: min(90vh, 860px);
+  min-height: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 30px 80px rgba(3, 23, 45, 0.36);
+}
+
+.qc-cert-preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 18px;
+  border-bottom: 1px solid #e4ebf1;
+  background: #f7fbff;
+}
+
+.qc-cert-preview-kicker {
+  display: block;
+  margin-bottom: 4px;
+  color: #208b49;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.qc-cert-preview-header h2 {
+  margin: 0;
+  color: #12385d;
+  font-size: 20px;
+}
+
+.qc-cert-preview-close {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid #dbe5ef;
+  border-radius: 50%;
+  background: #fff;
+  color: #163858;
+  cursor: pointer;
+}
+
+.qc-cert-preview-close:hover {
+  background: #eef4fb;
+}
+
+.qc-cert-preview-document {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: auto;
+  padding: 18px;
+  background: #27313b;
+}
+
+.qc-cert-preview-canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.24);
+}
+
+.qc-cert-preview-status {
+  margin: auto;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.qc-cert-preview-error {
+  max-width: 560px;
+  color: #ffd5d5;
+  text-align: center;
+}
+
+.qc-cert-preview-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px 16px;
+  border-top: 1px solid #e4ebf1;
+  background: #f7fbff;
+  color: #163858;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.qc-cert-preview-controls button {
+  padding: 7px 12px;
+  border: 1px solid #cbd9e6;
+  border-radius: 8px;
+  background: #fff;
+  color: #163858;
+  cursor: pointer;
+  font: inherit;
+}
+
+.qc-cert-preview-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.qc-cert-preview-controls button:not(:disabled):hover {
+  background: #eef4fb;
 }
 
 /* Cert logos */
@@ -7129,6 +7267,7 @@ img {
 
 .product-detail-grid {
   display: grid;
+  min-width: 0;
   grid-template-columns: minmax(460px, 1.05fr) minmax(0, 0.95fr);
 }
 
@@ -7138,6 +7277,7 @@ img {
   display: flex;
   width: 100%;
   height: clamp(520px, 70vh, 760px);
+  min-width: 0;
   min-height: 0;
   flex-direction: row;
   overflow: hidden;
@@ -7147,10 +7287,13 @@ img {
 
 .product-detail-image-stage {
   display: grid;
+  min-width: 0;
   min-height: 0;
   flex: 1 1 auto;
   order: 2;
   place-items: center;
+  padding: 72px 12px 18px;
+  overflow: hidden;
 }
 
 .product-detail-main-image {
@@ -7158,7 +7301,7 @@ img {
   width: 100%;
   height: 100%;
   min-height: 0;
-  padding: 8px;
+  padding: 0;
   object-fit: contain;
   object-position: center;
 }
@@ -7207,7 +7350,7 @@ img {
 
 .product-detail-media span {
   position: absolute;
-  top: 42px;
+  top: 18px;
   left: 104px;
   z-index: 1;
   max-width: calc(100% - 124px);
@@ -7226,9 +7369,12 @@ img {
 }
 
 .product-detail-content {
+  position: relative;
+  z-index: 1;
   display: flex;
   min-width: 0;
   flex-direction: column;
+  background: #fff;
   padding: 46px 42px 38px;
 }
 
@@ -7372,10 +7518,11 @@ img {
   .product-detail-image-stage {
     width: auto;
     order: 2;
+    padding: 54px 8px 12px;
   }
 
   .product-detail-main-image {
-    padding: 8px;
+    padding: 0;
   }
 
   .product-detail-gallery {
@@ -7396,6 +7543,7 @@ img {
   }
 
   .product-detail-media span {
+    top: 14px;
     left: 88px;
     max-width: calc(100% - 100px);
   }
