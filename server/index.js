@@ -3,6 +3,7 @@ import { createServer } from 'node:http';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { sendProductsResponse } from './productApi.js';
+import { sendCertResponse } from './certApi.js';
 
 const serverDirectory = path.dirname(fileURLToPath(import.meta.url));
 const distDirectory = path.resolve(serverDirectory, '../dist');
@@ -47,8 +48,27 @@ function sendFile(filePath, res) {
   }).pipe(res);
 }
 
-const server = createServer((req, res) => {
+const server = createServer(async (req, res) => {
   const requestUrl = new URL(req.url || '/', `http://${req.headers.host || 'localhost'}`);
+
+  if (requestUrl.pathname === '/api/cert') {
+    if (req.method !== 'GET') {
+      res.statusCode = 405;
+      res.setHeader('Allow', 'GET');
+      res.end('Method not allowed');
+      return;
+    }
+    try {
+      await sendCertResponse(requestUrl.searchParams, res);
+    } catch (error) {
+      if (!res.headersSent) {
+        res.statusCode = 500;
+        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+        res.end(JSON.stringify({ error: 'Unable to load certificate', detail: error.message }));
+      }
+    }
+    return;
+  }
 
   if (requestUrl.pathname === '/api/products') {
     if (req.method !== 'GET') {

@@ -33,7 +33,7 @@ const certs = [
     title: 'ISO 9001:2015',
     sub: 'Quality Management System',
     desc: 'Reflects our dedication to continuous improvement and customer satisfaction.',
-    link: 'https://res.cloudinary.com/zx8iy4xx/raw/upload/v1789131464/shivshakti-certifications/ISO_9001_2015.pdf',
+    link: '/api/cert?id=ISO_9001_2015',
   },
   {
     num: '02',
@@ -42,7 +42,7 @@ const certs = [
     title: 'ISO 13485:2016',
     sub: 'Quality Management System for Medical Devices',
     desc: 'Ensures consistent quality and safety in every product and process.',
-    link: 'https://res.cloudinary.com/zx8iy4xx/raw/upload/v1789131465/shivshakti-certifications/ISO_13485_2016.pdf',
+    link: '/api/cert?id=ISO_13485_2016',
   },
   {
     num: '03',
@@ -51,7 +51,7 @@ const certs = [
     title: 'ISO 14001:2015',
     sub: 'Environmental Management System',
     desc: 'We follow responsible practices to protect the environment and build a sustainable future.',
-    link: 'https://res.cloudinary.com/zx8iy4xx/raw/upload/v1789131466/shivshakti-certifications/ISO_14001_2015.pdf',
+    link: '/api/cert?id=ISO_14001_2015',
   },
   {
     num: '04',
@@ -60,7 +60,7 @@ const certs = [
     title: 'ISO 45001:2018',
     sub: 'Occupational Health & Safety Management Systems',
     desc: 'Certifies our commitment to a safe and healthy working environment for our workforce.',
-    link: 'https://res.cloudinary.com/zx8iy4xx/raw/upload/v1789131467/shivshakti-certifications/ISO_45001_2018.pdf',
+    link: '/api/cert?id=ISO_45001_2018',
   },
   {
     num: '05',
@@ -69,7 +69,7 @@ const certs = [
     title: 'GMP Certified',
     sub: 'Good Manufacturing Practices',
     desc: 'Certified for following Good Manufacturing Practices across our full range of therapy and medical equipment.',
-    link: 'https://res.cloudinary.com/zx8iy4xx/raw/upload/v1789131467/shivshakti-certifications/GMP_Certificate.pdf',
+    link: '/api/cert?id=GMP_Certificate',
   },
   {
     num: '06',
@@ -78,7 +78,7 @@ const certs = [
     title: 'FDA Compliance',
     sub: 'FDA Regulatory Guideline for Food and Drug Administration',
     desc: 'Assessed and certified for manufacturing, supply, import and export of physiotherapy equipment.',
-    link: 'https://res.cloudinary.com/zx8iy4xx/raw/upload/v1789131469/shivshakti-certifications/FDA_Certificate.pdf',
+    link: '/api/cert?id=FDA_Certificate',
   },
   {
     num: '07',
@@ -96,7 +96,7 @@ const certs = [
     title: 'IEC 60601-1:2015',
     sub: 'Medical Electrical Equipment Safety Standard',
     desc: 'Confirms our products meet essential international safety and performance requirements.',
-    link: 'https://res.cloudinary.com/zx8iy4xx/raw/upload/v1789131516/shivshakti-certifications/IEC_60601_1_2015.pdf',
+    link: '/api/cert?id=IEC_60601_1_2015',
   },
   {
     num: '09',
@@ -105,7 +105,7 @@ const certs = [
     title: 'GST Registered',
     sub: 'Government of India — GST REG-06',
     desc: 'Officially registered under the Goods and Services Tax Act, 2017.',
-    link: 'https://res.cloudinary.com/zx8iy4xx/raw/upload/v1789131517/shivshakti-certifications/GST_Certificate.pdf',
+    link: '/api/cert?id=GST_Certificate',
   },
   {
     num: '10',
@@ -114,7 +114,7 @@ const certs = [
     title: 'MSME Registered',
     sub: 'Government of India',
     desc: 'Recognized by the Ministry of MSME for our contribution to the growth of Indian manufacturing.',
-    link: 'https://res.cloudinary.com/zx8iy4xx/raw/upload/v1789131518/shivshakti-certifications/MSME_Certificate.pdf',
+    link: '/api/cert?id=MSME_Certificate',
   },
   {
     num: '11',
@@ -123,7 +123,7 @@ const certs = [
     title: 'IEC Certificate',
     sub: 'Import Export Certificate',
     desc: 'Certified by the Government of India for Import and Export.',
-    link: 'https://res.cloudinary.com/zx8iy4xx/raw/upload/v1789131519/shivshakti-certifications/IEC_Import_Export.pdf',
+    link: '/api/cert?id=IEC_Import_Export',
   }
 ];
 
