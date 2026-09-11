@@ -17,7 +17,7 @@ export default function ContactPage() {
     const formData = new FormData(form);
     
     try {
-      const response = await fetch("https://formsubmit.co/ajax/tyagikunal1818@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/shivshaktihealthcareequipments@gmail.com", {
         method: "POST",
         body: formData
       });
