@@ -6989,11 +6989,16 @@ img {
   }
 
   .product-card-footer {
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
     gap: 7px;
     margin-top: 10px;
     padding-top: 10px;
+  }
+
+  .product-card-price-block {
+    align-items: flex-start;
+    text-align: left;
   }
 
   .product-card-price {
