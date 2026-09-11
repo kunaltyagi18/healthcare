@@ -63,7 +63,7 @@ export default function ContactPage() {
               </div>
               <div className="form-row">
                 <label>Your name<input name="Name" required placeholder="Enter your name" /></label>
-                <label>Phone number<input name="Phone" required placeholder="+91" /></label>
+                <label>Phone number<input type="tel" name="Phone" required pattern="[0-9]{10}" maxLength="10" minLength="10" title="Please enter a valid 10-digit phone number" placeholder="10-digit mobile number" /></label>
               </div>
               <label>Work email<input name="Email" type="email" required placeholder="you@company.com" /></label>
               <label>What can we help with?<textarea name="Message" required rows={4} placeholder="Tell us about your space or product requirement" /></label>
