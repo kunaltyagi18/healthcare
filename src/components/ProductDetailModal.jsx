@@ -14,6 +14,21 @@ export default function ProductDetailModal({ product, onClose, onNavigate }) {
     !hasCloudinaryImages || !String(image).startsWith('/products/')
   ));
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+  const [isDragging, setIsDragging] = useState(false);
+
+  function handleSwipe() {
+    if (touchStart === null || touchEnd === null) return;
+    const distance = touchStart - touchEnd;
+    if (distance > 40 && activeImageIndex < productImages.length - 1) {
+      setActiveImageIndex((prev) => prev + 1);
+    } else if (distance < -40 && activeImageIndex > 0) {
+      setActiveImageIndex((prev) => prev - 1);
+    }
+    setTouchStart(null);
+    setTouchEnd(null);
+  }
 
   useEffect(() => {
     function handleKeyDown(event) {
@@ -50,15 +65,25 @@ export default function ProductDetailModal({ product, onClose, onNavigate }) {
 
         <div className="product-detail-grid">
           <div className="product-detail-media">
-            <div className="product-detail-image-stage">
+            <div 
+              className="product-detail-image-stage"
+              onTouchStart={(e) => { setTouchEnd(null); setTouchStart(e.targetTouches[0].clientX); }}
+              onTouchMove={(e) => setTouchEnd(e.targetTouches[0].clientX)}
+              onTouchEnd={handleSwipe}
+              onMouseDown={(e) => { setIsDragging(true); setTouchEnd(null); setTouchStart(e.clientX); }}
+              onMouseMove={(e) => { if (isDragging) setTouchEnd(e.clientX); }}
+              onMouseUp={() => { if (isDragging) { setIsDragging(false); handleSwipe(); } }}
+              onMouseLeave={() => { if (isDragging) { setIsDragging(false); handleSwipe(); } }}
+              style={{ cursor: productImages.length > 1 ? (isDragging ? 'grabbing' : 'grab') : 'default' }}
+            >
               <img
-              className="product-detail-main-image"
-              src={productImages[activeImageIndex] || product.image}
-              alt={product.title}
-              draggable="false"
-              onCopy={(event) => event.preventDefault()}
-              onContextMenu={(event) => event.preventDefault()}
-              onDragStart={(event) => event.preventDefault()}
+                className="product-detail-main-image"
+                src={productImages[activeImageIndex] || product.image}
+                alt={product.title}
+                draggable="false"
+                onCopy={(event) => event.preventDefault()}
+                onContextMenu={(event) => event.preventDefault()}
+                onDragStart={(event) => event.preventDefault()}
               />
             </div>
             {productImages.length > 1 && (
