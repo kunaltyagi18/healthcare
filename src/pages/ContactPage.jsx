@@ -1,4 +1,4 @@
-﻿import usePageTitle from '../utils/usePageTitle';
+import usePageTitle from '../utils/usePageTitle';
 import { useState } from 'react';
 import { ArrowRight, Phone, Mail, MapPin } from 'lucide-react';
 import { PageIntro } from '../components/Shared';
@@ -6,7 +6,32 @@ import { CONTACT } from '../data/siteData';
 
 export default function ContactPage() {
   usePageTitle('Contact Us');
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState('idle'); // 'idle', 'submitting', 'success', 'error'
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (status === 'submitting') return;
+    setStatus('submitting');
+    
+    const form = event.target;
+    const formData = new FormData(form);
+    
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/tyagikunal1818@gmail.com", {
+        method: "POST",
+        body: formData
+      });
+      
+      if (response.ok) {
+        setStatus('success');
+        form.reset();
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      setStatus('error');
+    }
+  };
   
   return (
     <>
@@ -28,19 +53,25 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="contact-form-wrapper">
-            <form className="contact-form" onSubmit={(event) => { event.preventDefault(); setSent(true); }}>
+            <form className="contact-form" onSubmit={handleSubmit}>
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="New Website Enquiry" />
+              <input type="hidden" name="_template" value="table" />
               <div className="form-header" style={{ marginBottom: '30px' }}>
                 <span className="eyebrow" style={{ color: 'var(--blue)' }}>SEND QUERY</span>
                 <h2 style={{ fontSize: '28px', color: 'var(--navy)', fontWeight: 800, marginTop: '4px', letterSpacing: '-0.02em' }}>Contact our team</h2>
               </div>
               <div className="form-row">
-                <label>Your name<input required placeholder="Enter your name" /></label>
-                <label>Phone number<input required placeholder="+91" /></label>
+                <label>Your name<input name="Name" required placeholder="Enter your name" /></label>
+                <label>Phone number<input name="Phone" required placeholder="+91" /></label>
               </div>
-              <label>Work email<input type="email" required placeholder="you@company.com" /></label>
-              <label>What can we help with?<textarea required rows={4} placeholder="Tell us about your space or product requirement" /></label>
-              <button type="submit" className="submit-enquiry-btn">{sent ? 'Request received' : 'Send enquiry'} <ArrowRight size={17} /></button>
-              {sent && <p className="success-message">Thank you. Our team will be in touch soon.</p>}
+              <label>Work email<input name="Email" type="email" required placeholder="you@company.com" /></label>
+              <label>What can we help with?<textarea name="Message" required rows={4} placeholder="Tell us about your space or product requirement" /></label>
+              <button type="submit" className="submit-enquiry-btn" disabled={status === 'submitting'}>
+                {status === 'submitting' ? 'Sending...' : status === 'success' ? 'Request received' : 'Send enquiry'} <ArrowRight size={17} />
+              </button>
+              {status === 'success' && <p className="success-message">Thank you. Our team will be in touch soon.</p>}
+              {status === 'error' && <p className="error-message" style={{ color: 'red', marginTop: '10px', fontSize: '14px' }}>Something went wrong. Please try again later.</p>}
             </form>
           </div>
         </div>
