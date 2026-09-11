@@ -322,29 +322,19 @@ function CertificatePreview({ certificate, onClose }) {
         if (cancelled) return;
 
         const canvas = canvasRef.current;
-        const containerWidth = canvas.parentElement?.clientWidth || 960;
-        const baseViewport = page.getViewport({ scale: 1 });
         
-        // Ensure PDF is large enough to read on mobile (allows scrolling)
-        const isMobile = window.innerWidth <= 768;
-        const minScale = isMobile ? 1.0 : 0.5;
-        const cssScale = Math.min(2, Math.max(minScale, (containerWidth - 36) / baseViewport.width));
-        
-        // Fix blurriness on Retina/High-DPI displays
-        const pixelRatio = window.devicePixelRatio || 1;
-        const renderScale = cssScale * pixelRatio;
-        
+        // Always render at a high resolution for maximum sharpness (HD)
+        const renderScale = 2.0 * (window.devicePixelRatio || 1);
         const renderViewport = page.getViewport({ scale: renderScale });
-        const cssViewport = page.getViewport({ scale: cssScale });
         const context = canvas.getContext('2d', { alpha: false });
 
-        // Set actual canvas resolution (for sharpness)
+        // Set actual canvas resolution
         canvas.width = Math.ceil(renderViewport.width);
         canvas.height = Math.ceil(renderViewport.height);
         
-        // Set CSS display size (for layout)
-        canvas.style.width = `${Math.ceil(cssViewport.width)}px`;
-        canvas.style.height = `${Math.ceil(cssViewport.height)}px`;
+        // Clear any inline styles, let CSS handle the responsive fit
+        canvas.style.width = '';
+        canvas.style.height = '';
         
         await page.render({ canvasContext: context, viewport: renderViewport }).promise;
       } catch (renderError) {

@@ -4754,8 +4754,10 @@ img {
 
 .qc-cert-preview-canvas {
   display: block;
+  width: 100%;
   max-width: 100%;
-  height: auto;
+  max-height: calc(100vh - 160px);
+  object-fit: contain;
   background: #fff;
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.24);
 }
