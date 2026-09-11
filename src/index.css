@@ -984,7 +984,7 @@ img {
     gap: 12px;
   }
 
-  .hc-topbar-loc {
+  .hc-topbar-left a[href^="mailto"] {
     display: none;
   }
 
@@ -1067,10 +1067,6 @@ img {
     align-items: center;
     gap: 12px;
     width: auto;
-  }
-  
-  .hc-topbar-left a[href^="mailto"] {
-    display: none;
   }
 
   .hc-topbar-inner {
