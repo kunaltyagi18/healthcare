@@ -1,8 +1,8 @@
 import usePageTitle from '../utils/usePageTitle';
 import useAntiCopy from '../utils/useAntiCopy';
 import { useEffect, useRef, useState } from 'react';
-import * as pdfjsLib from 'pdfjs-dist';
-import pdfWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
+import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf.mjs';
+import pdfWorkerUrl from 'pdfjs-dist/legacy/build/pdf.worker.min.mjs?url';
 import {
   Award,
   Eye,
@@ -22,16 +22,6 @@ import {
   X,
 } from 'lucide-react';
 
-// Polyfill for URL.parse (used by newer pdfjs-dist) to support older mobile browsers
-if (typeof URL !== 'undefined' && !URL.parse) {
-  URL.parse = function(url, base) {
-    try {
-      return new URL(url, base);
-    } catch (e) {
-      return null;
-    }
-  };
-}
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
 
