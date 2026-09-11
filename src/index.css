@@ -4683,6 +4683,10 @@ img {
   .qc-cert-preview-document {
     padding: 8px;
   }
+  .qc-cert-preview {
+    height: auto;
+    max-height: 90vh;
+  }
 }
 
 .qc-cert-preview {
