@@ -47,21 +47,3 @@ scripts/backups/
 
 # Intermediate updated products file (reviewed before finalize runs)
 public/data/products-updated.json
-
-# -- Certifications (now hosted on Cloudinary CDN) ----------------------------
-# NOTE: CE cert stays tracked -- it is 34.85 MB (above Cloudinary 10 MB limit)
-# and must remain in public/ for local serving until compressed/replaced.
-public/certifications/SHIVSHAKTI HEALTHCARE EQUIPMENTS (1).pdf
-public/certifications/ISO_13485_2016_Certificate.pdf
-public/certifications/ISO_14001_2015_Certificate.pdf
-public/certifications/ISO_45001_2018_Certificate.pdf
-public/certifications/GMP_Certificate.pdf
-public/certifications/FDA SHIVSHAKTI HEALTHCARE EQUIPMENTS.pdf
-public/certifications/IEC_60601-1_2015_Certificate.pdf
-public/certifications/GST Registration Certificate.pdf
-public/certifications/MSME SHIVSHAKTI NEW.pdf
-public/certifications/OEWPS3977E.pdf
-
-# Certification upload script + results (one-time, not needed in repo)
-scripts/upload-certifications.js
-scripts/cert-upload-results.json
