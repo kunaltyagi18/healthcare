@@ -170,7 +170,7 @@ function TopBar() {
         <div className="hc-topbar-right">
           <a href="https://www.facebook.com/share/1HJxtcBHZW/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hc-social-btn"><Facebook size={13} /></a>
           <a href="https://www.instagram.com/shivshakti_healthcare_eqs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hc-social-btn"><Instagram size={13} /></a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hc-social-btn"><Youtube size={13} /></a>
+          <a href="https://www.youtube.com/@SHIVSHAKTIHEALTHCAREEQUIPMENTS" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hc-social-btn"><Youtube size={13} /></a>
         </div>
       </div>
     </div>
