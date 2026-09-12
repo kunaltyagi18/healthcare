@@ -2,17 +2,18 @@ import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { formatCurrency, getDescriptionLines } from '../utils/productFormatting';
 import useAntiCopy from '../utils/useAntiCopy';
+import ProductImage from './ProductImage';
 
 export default function ProductDetailModal({ product, onClose, onNavigate }) {
   const antiCopyRef = useAntiCopy();
   const allProductImages = [...new Set([
     product.image,
     ...(Array.isArray(product.images) ? product.images : []),
-  ].filter(Boolean))];
-  const hasCloudinaryImages = allProductImages.some((image) => String(image).includes('res.cloudinary.com'));
-  const productImages = allProductImages.filter((image) => (
-    !hasCloudinaryImages || !String(image).startsWith('/products/')
-  ));
+  ].filter((image) => {
+    const value = String(image ?? '').trim();
+    return value && !value.startsWith('/products/');
+  }))];
+  const productImages = allProductImages;
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const touchRef = useRef({ startX: null, endX: null, isDragging: false });
 
@@ -80,7 +81,7 @@ export default function ProductDetailModal({ product, onClose, onNavigate }) {
                   <ChevronLeft size={24} />
                 </button>
               )}
-              <img
+              <ProductImage
                 className="product-detail-main-image"
                 src={productImages[activeImageIndex] || product.image}
                 alt={product.title}
@@ -106,12 +107,12 @@ export default function ProductDetailModal({ product, onClose, onNavigate }) {
                     aria-label={`View product image ${index + 1}`}
                     aria-pressed={index === activeImageIndex}
                   >
-                    <img src={image} alt="" draggable="false" />
+                    <ProductImage src={image} alt="" draggable="false" />
                   </button>
                 ))}
               </div>
             )}
-            <span>{product.category}</span>
+            <span className="product-detail-category">{product.category}</span>
           </div>
 
           <div className="product-detail-content">

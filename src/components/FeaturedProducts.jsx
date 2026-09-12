@@ -1,6 +1,23 @@
 import { useEffect, useState } from 'react';
 import { AlertCircle, ArrowRight, PackageOpen, RefreshCw } from 'lucide-react';
 import { fetchProducts } from '../api/products';
+import ProductImage from './ProductImage';
+
+const excludedFeaturedModels = new Set([
+  'SVS-ELT-199',
+  'SVS-ELTA-210',
+  'SVS-ELTA-211',
+  'SVS-ELTA-212',
+  'SVS-ELTA-213',
+]);
+const preferredFeaturedModels = ['SVS-REH-522', 'SVS-CMG-1103', 'SVS-REH-553'];
+
+function hasUsableFeaturedImage(product) {
+  const image = String(product.image ?? '').trim();
+  return image
+    && !image.startsWith('/products/')
+    && !excludedFeaturedModels.has(product.modelNumber);
+}
 
 function FeaturedProductLoading() {
   return (
@@ -18,8 +35,20 @@ export default function FeaturedProducts({ onNavigate }) {
   useEffect(() => {
     const controller = new AbortController();
 
-    fetchProducts({ page: 1, signal: controller.signal })
-      .then((response) => setProducts(response.data.slice(0, 8)))
+    async function loadFeaturedProducts() {
+      const [firstPage, ...preferredPages] = await Promise.all([
+        fetchProducts({ page: 1, signal: controller.signal }),
+        ...preferredFeaturedModels.map((modelNumber) => fetchProducts({ search: modelNumber, signal: controller.signal })),
+      ]);
+      const firstProducts = firstPage.data.filter(hasUsableFeaturedImage).slice(0, 5);
+      const preferredProducts = preferredPages
+        .flatMap((response) => response.data)
+        .filter(hasUsableFeaturedImage);
+
+      setProducts([...firstProducts, ...preferredProducts].slice(0, 8));
+    }
+
+    loadFeaturedProducts()
       .catch((requestError) => {
         if (requestError.name !== 'AbortError') setError(requestError.message || 'Unable to load featured products.');
       })
@@ -60,7 +89,7 @@ export default function FeaturedProducts({ onNavigate }) {
                 aria-label={`View ${product.title} on the products page`}
               >
                 <div className="featured-product-image">
-                  <img
+                  <ProductImage
                     src={product.image}
                     alt=""
                     loading="lazy"

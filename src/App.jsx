@@ -102,7 +102,7 @@ function Footer() {
             <div className="footer-logo-frame">
               <img src="/svs_logo_new.png" alt="Shivshakti Logo" className="site-logo footer-logo" />
             </div>
-            <span style={{ textAlign: 'left', lineHeight: '1.3', fontSize: '18px' }}>SHIVSHAKTI <strong>HEALTHCARE</strong><br /><small style={{ display: 'block', marginTop: '4px', fontSize: '15px', letterSpacing: '0.1em', color: '#fff', fontWeight: '800' }}>EQUIPMENTS</small></span>
+            <span className="footer-brand-name">SHIVSHAKTI HEALTHCARE<br />EQUIPMENTS</span>
           </button>
           <div className="footer-contact">
             <span><MapPin size={14} /> {CONTACT.address}</span>

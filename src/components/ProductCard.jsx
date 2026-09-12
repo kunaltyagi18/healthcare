@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { formatCurrency, getDescription } from '../utils/productFormatting';
+import ProductImage from './ProductImage';
 
 export default function ProductCard({ product, onNavigate, onOpen }) {
   const displayPrice = product.discountedPrice ?? product.totalValue ?? product.mrp;
@@ -22,7 +23,7 @@ export default function ProductCard({ product, onNavigate, onOpen }) {
       aria-label={`View details for ${product.title}`}
     >
       <div className="product-card-media">
-        <img
+        <ProductImage
           src={product.image}
           alt={product.title}
           loading="lazy"

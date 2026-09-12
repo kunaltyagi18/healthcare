@@ -1,0 +1,60 @@
+import { Building2, Stethoscope, HeartHandshake, Activity, GraduationCap, BookOpen, Award, Headphones, Truck, Globe, ShieldCheck, Microscope, Factory, Dumbbell, Landmark, RefreshCw, Bed, Accessibility, Hospital, School } from 'lucide-react';
+
+export const CONTACT = {
+  phone: '+91 89201 99593',
+  phoneHref: 'tel:+918920199593',
+  whatsappHref: 'https://wa.me/918920199593',
+  email: 'shivshaktihealthcareequipments@gmail.com',
+  emailHref: 'mailto:shivshaktihealthcareequipments@gmail.com',
+  address: 'Plot No-82/1 & 82/2, Part of Plot No-82, First Floor, Front Side, Left Side, Subhash Park Extension, Block B, Uttam Nagar, New Delhi, Delhi 110059'
+};
+
+export const IMAGES = {
+  catalogueBook: '/catalogue_book.jpg'
+};
+
+export const catalogueWhyConnect = [
+  { icon: BookOpen, color: 'blue', title: 'COMPLETE\nCATALOGUE', desc: 'Get our latest\nproduct catalogue\nwith full details.' },
+  { icon: Award, color: 'green', title: 'TRUSTED\nQUALITY', desc: 'Premium quality\nproducts trusted by\nhealthcare professionals.' },
+  { icon: Headphones, color: 'blue', title: 'EXPERT\nSUPPORT', desc: 'Our team is always\nready to assist you\nwith the right solution.' },
+  { icon: Truck, color: 'green', title: 'PAN INDIA\nREACH', desc: 'Reliable delivery\nacross India with\non-time service.' },
+];
+
+export const catalogueServing = [
+  { icon: Building2, title: 'HOSPITALS' },
+  { icon: Stethoscope, title: 'CLINICS' },
+  { icon: HeartHandshake, title: 'REHABILITATION\nCENTRES' },
+  { icon: Activity, title: 'THERAPY\nCENTRES' },
+  { icon: GraduationCap, title: 'INSTITUTIONS &\nTRAINING CENTRES' }
+];
+
+export const reasons = [
+  { title: 'Pan-India Delivery', description: 'Fast and reliable delivery across India.', icon: Truck, color: '#1c8a4b' },
+  { title: 'International Supply', description: 'Serving healthcare professionals across the globe.', icon: Globe, color: '#1c6faf' },
+  { title: 'After-Sales Support', description: 'Dedicated support for long-term peace of mind.', icon: Headphones, color: '#f97316' },
+  { title: 'Quality Assured', description: 'Built to meet clinical standards you can trust.', icon: Award, color: '#0d9488' },
+];
+
+export const solutions = [
+  { title: 'Set Up a Physiotherapy Clinic', eyebrow: 'CLINIC PLANNING', img: '/sol_physio.jpg' },
+  { title: 'Build a Rehabilitation Centre', eyebrow: 'CENTRE SOLUTIONS', img: '/sol_rehab.jpg' },
+  { title: 'Design a Sensory Room', eyebrow: 'SPECIALISED CARE', img: '/sol_sensory.jpg' },
+  { title: 'Hospital & Institutional Supply', eyebrow: 'LARGE-SCALE SUPPLY', img: '/sol_hospital.jpg' },
+];
+
+export const qualityPoints = [
+  { title: 'Quality Management', icon: Award },
+  { title: 'Robust Testing Processes', icon: Microscope },
+  { title: 'Safe & Reliable Products', icon: ShieldCheck },
+  { title: 'Ethical Manufacturing', icon: Factory },
+  { title: 'Continuous Improvement', icon: RefreshCw },
+];
+
+export const industries = [
+  { title: 'Physiotherapy Clinics', icon: Bed },
+  { title: 'Rehabilitation Centres', icon: Accessibility },
+  { title: 'Hospitals', icon: Hospital },
+  { title: 'Special Schools', icon: School },
+  { title: 'Wellness & Fitness Centres', icon: Dumbbell },
+  { title: 'NGOs & Govt. Institutions', icon: Landmark },
+];
